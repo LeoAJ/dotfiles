@@ -2,6 +2,10 @@
 
 A growing collection of dotfiles.
 
+## Zsh
+
+## iTerm2
+
 ## Brew
 
 * yarn
