@@ -10,21 +10,6 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
-# Move next only if `homebrew` is installed
-if command -v brew >/dev/null 2>&1; then
-  # Load rupa's z if installed
-  [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
-fi
-
-# Customize to your needs...
-
-export NODE_OPTIONS=--max_old_space_size=4096
-
-export NVM_DIR="$HOME/.nvm"
-[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh"  # This loads nvm
-[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
-
-alias j="jupyter"
 alias y="yarn"
 alias s="cd .."
 alias c="clear"
@@ -41,37 +26,13 @@ alias glol="gl --oneline"
 alias h="history"
 alias t="tree"
 
-# SPACESHIP_PROMPT_ORDER=(
-#   user
-#   dir
-#   git
-#   node
-#   package
-#   line_sep
-#   vi_mode
-#   jobs
-#   char
-# )
+export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
+[ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
 
-# SPACESHIP_DIR_COLOR=blue
-# SPACESHIP_GIT_BRANCH_PREFIX=''
-# SPACESHIP_GIT_STATUS_SHOW=false
-# SPACESHIP_PACKAGE_SYMBOL=''
-# SPACESHIP_NODE_SYMBOL=''
-# SPACESHIP_PACKAGE_COLOR=yellow
 
-export VISUAL=vim
-
-# Set Spaceship ZSH as a prompt
-# autoload -U promptinit; promptinit
-# prompt spaceship
-
-# fpath=( "$HOME/.zfunctions" $fpath )
-# autoload -U promptinit; promptinit
-# prompt pure
-
-export PATH="/usr/local/opt/sphinx-doc/bin:$PATH"
-function gi() { curl -sLw n https://www.gitignore.io/api/$@ ;}
-
-export YVM_DIR=/usr/local/opt/yvm
-[ -r $YVM_DIR/yvm.sh ] && . $YVM_DIR/yvm.sh
+# This is for `z` command
+# Move next only if `homebrew` is installed
+if command -v brew >/dev/null 2>&1; then
+        # Load rupa's z if installed
+        [ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
+fi

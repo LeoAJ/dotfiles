@@ -1,8 +1,37 @@
+❯ c
+if empty(glob('~/.vim/autoload/plug.vim'))
+  silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
+    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+  autocmd VimEnter * PlugInstall --sync | source $MYVIMRC
+endif
+
+call plug#begin('~/.vim/plugged')
+
+Plug 'tpope/vim-sensible'
+Plug 'joshdick/onedark.vim'
+Plug 'luochen1990/rainbow'
+Plug 'leafgarland/typescript-vim'
+Plug 'peitalin/vim-jsx-typescript'
+Plug 'pangloss/vim-javascript'
+Plug 'crusoexia/vim-javascript-lib'
+Plug 'mxw/vim-jsx'
+Plug 'elzr/vim-json'
+Plug 'stylus/stylus'
+Plug 'vim-airline/vim-airline'
+Plug 'vim-airline/vim-airline-themes'
+Plug 'rking/ag.vim'
+Plug 'jparise/vim-graphql'
+Plug 'hail2u/vim-css3-syntax'
+Plug 'terryma/vim-multiple-cursors'
+Plug 'valloric/youcompleteme'
+
+call plug#end()
+
 syntax on
 set clipboard=unnamed
 set ignorecase
 set background=dark
-colorscheme monokai 
+colorscheme onedark
 set laststatus=2
 set modifiable
 set wildmenu
@@ -16,43 +45,5 @@ set shiftwidth=2
 set nocompatible              " be iMproved, required
 set t_Co=256
 filetype off                  " required
-
-" set the runtime path to include Vundle and initialize
-set rtp+=~/.vim/bundle/Vundle.vim
-call vundle#begin()
-" alternatively, pass a path where Vundle should install plugins
-"call vundle#begin('~/some/path/here')
-
-" let Vundle manage Vundle, required
-Plugin 'VundleVim/Vundle.vim'
-
-" All of your Plugins must be added before the following line
-call vundle#end()            " required
-filetype plugin indent on    " required
-" To ignore plugin indent changes, instead use:
-"filetype plugin on
-"
-" Brief help
-" :PluginList       - lists configured plugins
-" :PluginInstall    - installs plugins; append `!` to update or just :PluginUpdate
-" :PluginSearch foo - searches for foo; append `!` to refresh local cache
-" :PluginClean      - confirms removal of unused plugins; append `!` to auto-approve removal
-"
-" see :h vundle for more details or wiki for FAQ
-" Put your non-Plugin stuff after this line
-"
-" Plugin 'kien/ctrlp.vim'
-Plugin 'leafgarland/typescript-vim'
-Plugin 'peitalin/vim-jsx-typescript'
-Plugin 'pangloss/vim-javascript'
-Plugin 'crusoexia/vim-javascript-lib'
-Plugin 'mxw/vim-jsx'
-Plugin 'elzr/vim-json'
-Plugin 'vim-multiple-cursors'
-Plugin 'stylus/stylus'
-Plugin 'vim-airline/vim-airline'
-Plugin 'vim-airline/vim-airline-themes'
-Plugin 'sickill/vim-monokai'
-Plugin 'rking/ag.vim'
-Plugin 'jparise/vim-graphql'
-Plugin 'hail2u/vim-css3-syntax'
+set belloff=all "disable beep sound"
+~
