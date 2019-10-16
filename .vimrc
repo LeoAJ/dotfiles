@@ -46,4 +46,3 @@ set nocompatible              " be iMproved, required
 set t_Co=256
 filetype off                  " required
 set belloff=all "disable beep sound"
-~
