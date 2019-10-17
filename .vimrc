@@ -1,4 +1,3 @@
-❯ c
 if empty(glob('~/.vim/autoload/plug.vim'))
   silent !curl -fLo ~/.vim/autoload/plug.vim --create-dirs
     \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
@@ -23,7 +22,8 @@ Plug 'rking/ag.vim'
 Plug 'jparise/vim-graphql'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'terryma/vim-multiple-cursors'
-Plug 'valloric/youcompleteme'
+Plug 'myusuf3/numbers.vim'
+Plug 'sonph/onehalf', {'rtp': 'vim/'}
 
 call plug#end()
 
@@ -31,7 +31,7 @@ syntax on
 set clipboard=unnamed
 set ignorecase
 set background=dark
-colorscheme onedark
+colorscheme onehalfdark
 set laststatus=2
 set modifiable
 set wildmenu
@@ -46,3 +46,4 @@ set nocompatible              " be iMproved, required
 set t_Co=256
 filetype off                  " required
 set belloff=all "disable beep sound"
+set relativenumber
