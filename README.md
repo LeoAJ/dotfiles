@@ -12,9 +12,10 @@ A growing collection of dotfiles.
 * yarn
 * z
 * tree
-* httpie
+* httpie (?)
 
 ## Others
 
 * docker
+* k8s
 * nvm
