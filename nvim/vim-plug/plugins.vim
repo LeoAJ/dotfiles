@@ -10,10 +10,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Better Syntax Support
     Plug 'sheerun/vim-polyglot'
-    " File Explorer
-    Plug 'scrooloose/NERDTree'
+    
     " Auto pairs for '(' '[' '{' 
     Plug 'jiangmiao/auto-pairs'
+   
     " Better Comments
     Plug 'preservim/nerdcommenter'
 
@@ -24,6 +24,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
     " Close tag
     Plug 'alvan/vim-closetag'
+
     " color
     Plug 'junegunn/rainbow_parentheses.vim'
 
@@ -37,8 +38,15 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     Plug 'vim-airline/vim-airline'
     Plug 'vim-airline/vim-airline-themes'
 
+    " Surround
+    Plug 'tpope/vim-surround'
+
     " See what keys do like in emacs
     Plug 'liuchengxu/vim-which-key'
+
+    " snippets
+    Plug 'honza/vim-snippets'
+    Plug 'mattn/emmet-vim'
 
     " Start Screen
     Plug 'mhinz/vim-startify'
