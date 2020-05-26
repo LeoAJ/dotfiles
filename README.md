@@ -21,6 +21,10 @@ copy `nvim` folder tp `~/.config/nvim`
 - z
 - tree
 - the_silver_search
+- fd
+- fzf
+- ripgrep
+- --HEAD universal-ctags/universal-ctags/universal-ctags
 
 ## Others
 
