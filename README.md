@@ -13,7 +13,8 @@ A growing collection of dotfiles.
 ## iTerm2
 
 - font (Hack Nerd Font)
-- theme (grubbox9)
+- theme ([gruvbox9](https://github.com/herrbischoff/iterm2-gruvbox))
+  - switch color for `cursor` and `cursor text`
 
 ## Nvim
 
