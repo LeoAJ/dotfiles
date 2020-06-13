@@ -22,6 +22,7 @@ copy `nvim` folder tp `~/.config/nvim`
 
 ## Brew
 
+- [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
 - yarn
 - bat
 - z
