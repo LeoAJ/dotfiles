@@ -23,22 +23,16 @@ Plug 'jparise/vim-graphql'
 Plug 'hail2u/vim-css3-syntax'
 Plug 'terryma/vim-multiple-cursors'
 Plug 'myusuf3/numbers.vim'
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
-Plug 'neoclide/coc.nvim', {'branch': 'release'}
-Plug 'scrooloose/nerdcommenter'
+Plug 'tpope/vim-surround'
+Plug 'morhetz/gruvbox'
 
 call plug#end()
-
-inoremap jk <ESC>
-nmap <C-n> :NERDTreeToggle<CR>
-vmap ++ <plug>NERDCommenterToggle
-nmap ++ <plug>NERDCommenterToggle
 
 syntax on
 set clipboard=unnamed
 set ignorecase
 set background=dark
-colorscheme onehalfdark
+colorscheme gruvbox
 set laststatus=2
 set modifiable
 set wildmenu
@@ -54,16 +48,4 @@ set t_Co=256
 filetype off                  " required
 set belloff=all "disable beep sound"
 set relativenumber
-
-" coc config
-let g:coc_global_extensions = [
-  \ 'coc-snippets',
-  \ 'coc-pairs',
-  \ 'coc-eslint',
-  \ 'coc-prettier',
-  \ 'coc-json',
-  \ ]
-" from readme
-" if hidden is not set, TextEdit might fail.
-set hidden " Some servers have issues with backup files, see #649 set nobackup set nowritebackup " Better display for messages set cmdheight=2 " You will have bad experience for diagnostic messages when it's default 4000.
-set updatetime=300
+set autochdir
