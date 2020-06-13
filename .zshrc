@@ -10,6 +10,12 @@ if [[ -s "${ZDOTDIR:-$HOME}/.zprezto/init.zsh" ]]; then
   source "${ZDOTDIR:-$HOME}/.zprezto/init.zsh"
 fi
 
+#setopt PROMPT_SUBST
+#PROMPT='%n in ${PWD/#$HOME/~}'
+
+# bind vim key in terminal
+bindkey -v
+
 alias y="yarn"
 alias s="cd .."
 alias c="clear"
@@ -33,8 +39,11 @@ alias dc="docker-compose"
 alias cg="cargo"
 alias n="nvim"
 alias b="brew"
-alias cp="cp -iv"
-alias mv="mv -iv"
+
+alias \
+	cp="cp -iv" \
+	mv="mv -iv" \
+	mkd="mkdir -pv"
 
 export NVM_DIR="$([ -z "${XDG_CONFIG_HOME-}" ] && printf %s "${HOME}/.nvm" || printf %s "${XDG_CONFIG_HOME}/nvm")"
 [ -s "$NVM_DIR/nvm.sh" ] && \. "$NVM_DIR/nvm.sh" # This loads nvm
@@ -46,3 +55,10 @@ if command -v brew >/dev/null 2>&1; then
 	# Load rupa's z if installed
 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
 fi
+[ -s "$NVM_DIR/bash_completion" ] && \. "$NVM_DIR/bash_completion"  # This loads nvm bash_completion
+
+# for deno
+export DENO_INSTALL="/Users/leo/.deno"
+export PATH="$DENO_INSTALL/bin:$PATH"
+
+

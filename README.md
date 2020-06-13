@@ -4,12 +4,16 @@ A growing collection of dotfiles.
 
 ## Zsh
 
-[prezto](https://github.com/sorin-ionescu/prezto)
+[oh-my-zsh](https://github.com/ohmyzsh/ohmyzsh)
+
+#### setting
+
+`~/.config/zsh`
 
 ## iTerm2
 
-- font
-- theme
+- font (Hack Nerd Font)
+- theme (grubbox9)
 
 ## Nvim
 
@@ -18,6 +22,7 @@ copy `nvim` folder tp `~/.config/nvim`
 ## Brew
 
 - yarn
+- bat
 - z
 - tree
 - the_silver_search
