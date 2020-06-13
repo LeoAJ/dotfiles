@@ -8,7 +8,9 @@ A growing collection of dotfiles.
 
 #### setting
 
-`~/.config/zsh`
+- all settings in `~/.config/zsh`
+- install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
+- install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
 ## iTerm2
 
@@ -23,6 +25,7 @@ copy `nvim` folder tp `~/.config/nvim`
 ## Brew
 
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
+- zsh-syntax-highlighting
 - yarn
 - bat
 - z
