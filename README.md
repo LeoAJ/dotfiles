@@ -45,3 +45,7 @@ copy `nvim` folder tp `~/.config/nvim`
 ## Fix copy from vim to clipboard
 
 go to iTerm2, key binding setting, set `cmd+c` to send text with `"+y`
+
+## ASCII Art Generator
+
+style is `Slant`
