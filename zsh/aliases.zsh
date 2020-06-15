@@ -1,4 +1,5 @@
 unalias l
+unalias gcm
 
 # git
 alias gf="g fetch"
@@ -9,7 +10,7 @@ alias gaa="g add ."
 alias ggp="gp origin"
 alias ga="g add"
 alias gd="g diff"
-alias gstf="gst | fpp"
+alias gcm='g commit --message'
 alias glp="gl --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias glol="gl --oneline"
 

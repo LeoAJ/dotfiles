@@ -13,14 +13,14 @@ call plug#begin('~/.config/nvim/autoload/plugged')
     
     " Auto pairs for '(' '[' '{' 
     Plug 'jiangmiao/auto-pairs'
-   
+
     " Better Comments
-    Plug 'preservim/nerdcommenter'
+    Plug 'tpope/vim-commentary'
+    "Plug 'preservim/nerdcommenter'
 
     " Theme
-    Plug 'christianchiarulli/onedark.vim'
-    Plug 'kaicataldo/material.vim'
-    Plug 'NLKNguyen/papercolor-theme'
+    Plug 'gruvbox-community/gruvbox'
+    " Plug 'morhetz/gruvbox'
 
     " Close tag
     Plug 'alvan/vim-closetag'
