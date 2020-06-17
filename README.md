@@ -44,7 +44,8 @@ copy `nvim` folder tp `~/.config/nvim`
 
 ## Fix copy from vim to clipboard
 
-go to iTerm2, key binding setting, set `cmd+c` to send text with `"+y`
+- go to iTerm2, key binding setting, set `cmd+c` to send text with `"+y`
+- set `left option` to `ESC+`, in order to make resize split tab working properly
 
 ## ASCII Art Generator
 
