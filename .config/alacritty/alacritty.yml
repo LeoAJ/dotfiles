@@ -1,0 +1,141 @@
+# Configuration for Alacritty, the GPU enhanced terminal emulator.
+
+# Any items in the `env` entry below will be added as
+# environment variables. Some entries may override variables
+# set by alacritty itself.
+env:
+  TERM: xterm-256color
+
+window:
+  dimensions:
+    columns: 60
+    lines: 40
+  padding:
+    x: 5
+    y: 5
+  dynamic_padding: false
+  decorations: none
+  startup_mode: Maximized
+
+# Window title
+#title: Alacritty
+
+scrolling:
+  # Maximum number of lines in the scrollback buffer.
+  # Specifying '0' will disable scrolling.
+  history: 10000
+
+  # Scrolling distance multiplier.
+  multiplier: 3
+
+# Font configuration
+font:
+  normal:
+    family: Hack Nerd Font
+    style: Regular
+  bold:
+    family: Hack Nerd Font
+    style: Bold
+  italic:
+    family: Hack Nerd Font
+    style: Italic
+  bold_italic:
+    family: Hack Nerd Font
+    style: Bold Italic
+  size: 18
+  offset:
+    x: 0
+    y: 0
+  glyph_offset:
+    x: 0
+    y: 0
+  use_thin_strokes: true
+
+# If `true`, bold text is drawn using the bright color variants.
+draw_bold_text_with_bright_colors: true
+
+background_opacity: 0.85
+
+# Cursor colors
+cursor:
+  style: Block
+  unfocused_hollow: true
+
+selection:
+  semantic_escape_chars: ",│`|:\"' ()[]{}<>\t"
+  save_to_clipboard: false
+
+# Vi mode cursor style
+#
+# If the vi mode cursor style is `None` or not specified, it will fall back to
+# the style of the active value of the normal cursor.
+#
+# See `cursor.style` for available options.
+#vi_mode_style: None
+
+# If this is `true`, the cursor will be rendered as a hollow box when the
+# window is not focused.
+unfocused_hollow: true
+
+# Thickness of the cursor relative to the cell width as floating point number
+# from `0.0` to `1.0`.
+#thickness: 0.15
+
+# Live config reload (changes require restart)
+live_config_reload: true
+
+# Shell
+#
+# You can set `shell.program` to the path of your favorite shell, e.g. `/bin/fish`.
+# Entries in `shell.args` are passed unmodified as arguments to the shell.
+#
+# Default:
+#   - (macOS) /bin/bash --login
+#   - (Linux/BSD) user login shell
+#   - (Windows) powershell
+#shell:
+#  program: /bin/bash
+#  args:
+#    - --login
+
+# Colors (Gruvbox dark)
+colors:
+  # Default colors
+  primary:
+    # hard contrast: background = '0x1d2021'
+    background: '0x282828'
+    # soft contrast: background = '0x32302f'
+    foreground: '0xebdbb2'
+
+  # Normal colors
+  normal:
+    black: '#353535'
+    red: '#d73925'
+    green: '#a8a521'
+    yellow: '#dfa82a'
+    blue: '#549699'
+    magenta: '#bf7897'
+    cyan: '#79aa7d'
+    white: '#b7a996'
+
+  # Bright colors
+  bright:
+    black: '#a39586'
+    red: '#fe6142'
+    green: '#c4c431'
+    yellow: '#fcc73c'
+    blue: '#94b3a8'
+    magenta: '#dc9aab'
+    cyan: '#9dd08e'
+    white: '#efe1bf'
+
+key_bindings:
+  - { key: Equals, mods: Shift, action: IncreaseFontSize }
+  - { key: Minus, mods: Shift, action: DecreaseFontSize }
+  - { key: V, mods: Command, action: Paste }
+  - { key: C, mods: Command, action: Copy }
+  - { key: H, mods: Command, action: Hide }
+  - { key: M, mods: Command, action: Minimize }
+  - { key: F, mods: Command|Control, action: ToggleFullscreen }
+  - { key: N, mods: Command, action: SpawnNewInstance       }
+  - { key: W, mods: Command, action: Quit }
