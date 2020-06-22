@@ -18,9 +18,13 @@ A growing collection of dotfiles.
 - theme ([gruvbox9](https://github.com/herrbischoff/iterm2-gruvbox))
   - switch color for `cursor` and `cursor text`
 
+## Alacritty
+
+copy `alacritty` folder to `~/.config/alacritty`
+
 ## Nvim
 
-copy `nvim` folder tp `~/.config/nvim`
+copy `nvim` folder to `~/.config/nvim`
 
 ## Brew
 
