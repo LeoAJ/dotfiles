@@ -39,6 +39,11 @@ alias n="nvim"
 alias l="ls -1A"
 alias ll="ls -lh"
 alias b="brew"
+alias tm="tmux"
+alias e="exit"
+alias np="npm"
+alias ca="cat"
+alias ba="bat"
 
 alias \
 	cp="cp -iv" \
