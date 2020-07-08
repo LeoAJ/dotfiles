@@ -46,6 +46,15 @@ copy `nvim` folder to `~/.config/nvim`
 - k8s
 - nvm
 
+## Bat
+
+https://github.com/sharkdp/bat#output-style
+
+```
+--theme="gruvbox"
+--style="changes"
+```
+
 ## Fix copy from vim to clipboard
 
 - go to iTerm2, key binding setting, set `cmd+c` to send text with `"+y`
