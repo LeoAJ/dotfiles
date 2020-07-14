@@ -54,7 +54,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-background_opacity: 0.85
+# background_opacity: 0.8
 
 # Cursor colors
 cursor:
@@ -130,8 +130,8 @@ colors:
     white: '#ebdbb2'
 
 key_bindings:
-  - { key: Equals, mods: Shift, action: IncreaseFontSize }
-  - { key: Minus, mods: Shift, action: DecreaseFontSize }
+  # - { key: Equals, mods: Shift, action: IncreaseFontSize }
+  # - { key: Minus, mods: Shift, action: DecreaseFontSize }
   - { key: V, mods: Command, action: Paste }
   - { key: C, mods: Command, action: Copy }
   - { key: H, mods: Command, action: Hide }
