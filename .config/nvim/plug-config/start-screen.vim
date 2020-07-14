@@ -26,6 +26,8 @@ let g:startify_bookmarks = [
             \ { 'c': '/Users/leo/Documents/code'},
             \ { 'i': '~/.config/nvim/init.vim' },
             \ { 'z': '~/.zshrc' },
+            \ { 't': '~/.tmux.conf' },
+            \ { 'a': '~/.config/alacritty/alacritty.yml' },
             \ ]
 
 function! StartifyEntryFormat()
