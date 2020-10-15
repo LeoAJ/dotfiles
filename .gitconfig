@@ -1,0 +1,14 @@
+[user]
+	name = LeoAJ
+	email = leo0924@gmail.com
+[pager]
+	branch = false
+  diff = false
+[core]
+	excludesfile = /Users/leo/.gitignore_global
+[difftool "sourcetree"]
+	cmd = opendiff \"$LOCAL\" \"$REMOTE\"
+	path = 
+[mergetool "sourcetree"]
+	cmd = /Applications/Sourcetree.app/Contents/Resources/opendiff-w.sh \"$LOCAL\" \"$REMOTE\" -ancestor \"$BASE\" -merge \"$MERGED\"
+	trustExitCode = true
