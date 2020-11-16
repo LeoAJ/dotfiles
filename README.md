@@ -45,6 +45,7 @@ copy `nvim` folder to `~/.config/nvim`
 - docker
 - k8s
 - nvm
+- [tldr](https://github.com/tldr-pages/tldr)
 
 ## Bat
 
