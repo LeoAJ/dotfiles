@@ -22,6 +22,10 @@ A growing collection of dotfiles.
 
 copy `alacritty` folder to `~/.config/alacritty`
 
+#### Theme
+
+https://github.com/eendroroy/alacritty-theme
+
 ## Nvim
 
 copy `nvim` folder to `~/.config/nvim`
