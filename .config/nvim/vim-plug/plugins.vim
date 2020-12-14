@@ -1,65 +1,53 @@
-" auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    
-    " Auto pairs for '(' '[' '{' 
-    Plug 'jiangmiao/auto-pairs'
+  " LSP
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-lua/completion-nvim'
+  Plug 'tweekmonster/startuptime.vim'
 
-    " Better Comments
-    Plug 'tpope/vim-commentary'
-    "Plug 'preservim/nerdcommenter'
+  " Better Syntax Support
+  Plug 'othree/yajs.vim'
+  Plug 'HerringtonDarkholme/yats.vim'
+  Plug 'maxmellon/vim-jsx-pretty'
+  Plug 'chriskempson/base16-vim'
+  
+  " Auto pairs for '(' '[' '{' 
+  Plug 'jiangmiao/auto-pairs'
 
-    " Theme
-    Plug 'gruvbox-community/gruvbox'
-    " Plug 'morhetz/gruvbox'
+  " Better Comments
+  Plug 'tpope/vim-commentary'
 
-    " Close tag
-    Plug 'alvan/vim-closetag'
+  " Theme
+  Plug 'lifepillar/vim-gruvbox8'
 
-    " color
-    Plug 'junegunn/rainbow_parentheses.vim'
+  " Close tag
+  Plug 'alvan/vim-closetag'
 
-    " Cool Icons
-    Plug 'ryanoasis/vim-devicons'
+  " color
+  Plug 'junegunn/rainbow_parentheses.vim'
 
-    " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Cool Icons
+  " Plug 'ryanoasis/vim-devicons'
 
-    " Status Line
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+  " Surround
+  " Plug 'tpope/vim-surround'
 
-    " Surround
-    Plug 'tpope/vim-surround'
+  " See what keys do like in emacs
+  " Plug 'liuchengxu/vim-which-key'
 
-    " See what keys do like in emacs
-    Plug 'liuchengxu/vim-which-key'
+  " snippets
+  " Plug 'honza/vim-snippets'
+  " Plug 'mattn/emmet-vim'
 
-    " snippets
-    Plug 'honza/vim-snippets'
-    Plug 'mattn/emmet-vim'
+  " Git
+  Plug 'airblade/vim-gitgutter'
+  " Plug 'tpope/vim-fugitive'
+  " Plug 'tpope/vim-rhubarb'
+  " Plug 'junegunn/gv.vim'
 
-    " Start Screen
-    Plug 'mhinz/vim-startify'
-
-    " Git
-    Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
-
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
+  " FZF
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  " Plug 'airblade/vim-rooter'
 
 call plug#end()
