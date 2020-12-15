@@ -36,7 +36,7 @@ copy `nvim` folder to `~/.config/nvim`
 - zsh-syntax-highlighting
 - yarn
 - bat
-- z
+- [z](https://github.com/rupa/z)
 - tree
 - the_silver_search
 - fd
