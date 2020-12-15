@@ -38,7 +38,7 @@ copy `nvim` folder to `~/.config/nvim`
 - bat
 - [z](https://github.com/rupa/z)
 - tree
-- the_silver_search
+- the_silver_searcher
 - fd
 - fzf
 - ripgrep
@@ -60,16 +60,16 @@ https://github.com/sharkdp/bat#output-style
 --style="changes"
 ```
 
-## Fix copy from vim to clipboard
+## [DEPRECATE] Fix copy from vim to clipboard
 
 - go to iTerm2, key binding setting, set `cmd+c` to send text with `"+y`
 - set `left option` to `ESC+`, in order to make resize split tab working properly
 
-## ASCII Art Generator
+## [DEPRECATE] ASCII Art Generator
 
 style is `Slant`
 
-## Gruvbox theme colors
+## [DEPRECATE] Gruvbox theme colors
 
 | name   | dark | light |
 | ------ | :--: | ----: |
