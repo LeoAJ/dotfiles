@@ -12,12 +12,6 @@ A growing collection of dotfiles.
 - install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-## iTerm2
-
-- font (Hack Nerd Font)
-- theme ([gruvbox9](https://github.com/herrbischoff/iterm2-gruvbox))
-  - switch color for `cursor` and `cursor text`
-
 ## Alacritty
 
 copy `alacritty` folder to `~/.config/alacritty`
@@ -33,10 +27,11 @@ copy `nvim` folder to `~/.config/nvim`
 ## Brew
 
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
+- [Rectangle](https://github.com/rxhanson/Rectangle)
+- [z](https://github.com/rupa/z)
 - zsh-syntax-highlighting
 - yarn
 - bat
-- [z](https://github.com/rupa/z)
 - tree
 - the_silver_searcher
 - fd
@@ -59,6 +54,12 @@ https://github.com/sharkdp/bat#output-style
 --theme="gruvbox"
 --style="changes"
 ```
+
+## [DEPRECATE] iTerm2
+
+- font (Hack Nerd Font)
+- theme ([gruvbox9](https://github.com/herrbischoff/iterm2-gruvbox))
+- switch color for `cursor` and `cursor text`
 
 ## [DEPRECATE] Fix copy from vim to clipboard
 
