@@ -20,7 +20,11 @@ copy `alacritty` folder to `~/.config/alacritty`
 
 https://github.com/eendroroy/alacritty-theme
 
-## Nvim
+## Neovim
+
+```
+brew install neovim --HEAD
+```
 
 copy `nvim` folder to `~/.config/nvim`
 
