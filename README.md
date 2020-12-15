@@ -12,13 +12,11 @@ A growing collection of dotfiles.
 - install [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - install [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 
-## iTerm2
-
-- font (Hack Nerd Font)
-- theme ([gruvbox9](https://github.com/herrbischoff/iterm2-gruvbox))
-  - switch color for `cursor` and `cursor text`
-
 ## Alacritty
+
+```
+brew install --cask alacritty
+```
 
 copy `alacritty` folder to `~/.config/alacritty`
 
@@ -26,19 +24,24 @@ copy `alacritty` folder to `~/.config/alacritty`
 
 https://github.com/eendroroy/alacritty-theme
 
-## Nvim
+## Neovim
+
+```
+brew install neovim --HEAD
+```
 
 copy `nvim` folder to `~/.config/nvim`
 
 ## Brew
 
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
+- [Rectangle](https://github.com/rxhanson/Rectangle)
+- [z](https://github.com/rupa/z)
 - zsh-syntax-highlighting
 - yarn
 - bat
-- z
 - tree
-- the_silver_search
+- the_silver_searcher
 - fd
 - fzf
 - ripgrep
@@ -60,16 +63,22 @@ https://github.com/sharkdp/bat#output-style
 --style="changes"
 ```
 
-## Fix copy from vim to clipboard
+## [DEPRECATE] iTerm2
+
+- font (Hack Nerd Font)
+- theme ([gruvbox9](https://github.com/herrbischoff/iterm2-gruvbox))
+- switch color for `cursor` and `cursor text`
+
+## [DEPRECATE] Fix copy from vim to clipboard
 
 - go to iTerm2, key binding setting, set `cmd+c` to send text with `"+y`
 - set `left option` to `ESC+`, in order to make resize split tab working properly
 
-## ASCII Art Generator
+## [DEPRECATE] ASCII Art Generator
 
 style is `Slant`
 
-## Gruvbox theme colors
+## [DEPRECATE] Gruvbox theme colors
 
 | name   | dark | light |
 | ------ | :--: | ----: |
