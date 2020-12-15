@@ -14,6 +14,10 @@ A growing collection of dotfiles.
 
 ## Alacritty
 
+```
+brew install --cask alacritty
+```
+
 copy `alacritty` folder to `~/.config/alacritty`
 
 #### Theme
