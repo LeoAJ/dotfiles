@@ -30,20 +30,21 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'liuchengxu/vim-which-key'
 
   " snippets
-  " Plug 'honza/vim-snippets'
+  Plug 'SirVer/ultisnips'
+  Plug 'honza/vim-snippets'
   " Plug 'mattn/emmet-vim'
 
   " Git
   Plug 'mhinz/vim-signify'
   " Plug 'airblade/vim-gitgutter'
-  " Plug 'tpope/vim-fugitive'
-  " Plug 'tpope/vim-rhubarb'
-  " Plug 'junegunn/gv.vim'
 
   " FZF
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
   " Plug 'airblade/vim-rooter'
+
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'romgrk/barbar.nvim'
 
   Plug 'tweekmonster/startuptime.vim'
 
