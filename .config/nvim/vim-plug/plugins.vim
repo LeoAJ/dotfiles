@@ -1,65 +1,55 @@
-" auto-install vim-plug
-if empty(glob('~/.config/nvim/autoload/plug.vim'))
-  silent !curl -fLo ~/.config/nvim/autoload/plug.vim --create-dirs
-    \ https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
-  "autocmd VimEnter * PlugInstall
-  "autocmd VimEnter * PlugInstall | source $MYVIMRC
-endif
-
 call plug#begin('~/.config/nvim/autoload/plugged')
 
-    " Better Syntax Support
-    Plug 'sheerun/vim-polyglot'
-    
-    " Auto pairs for '(' '[' '{' 
-    Plug 'jiangmiao/auto-pairs'
+  " LSP
+  Plug 'neovim/nvim-lspconfig'
+  Plug 'nvim-lua/completion-nvim'
 
-    " Better Comments
-    Plug 'tpope/vim-commentary'
-    "Plug 'preservim/nerdcommenter'
+  " Better Syntax Support
+  Plug 'nvim-treesitter/nvim-treesitter'
+  
+  " Auto pairs for '(' '[' '{' 
+  Plug 'jiangmiao/auto-pairs'
+  Plug 'junegunn/rainbow_parentheses.vim'
 
-    " Theme
-    Plug 'gruvbox-community/gruvbox'
-    " Plug 'morhetz/gruvbox'
+  " Better Comments
+  Plug 'tpope/vim-commentary'
 
-    " Close tag
-    Plug 'alvan/vim-closetag'
+  " Theme
+  Plug 'lifepillar/vim-gruvbox8'
 
-    " color
-    Plug 'junegunn/rainbow_parentheses.vim'
+  " Close tag
+  Plug 'alvan/vim-closetag'
+  
+  " Format
+  Plug 'dense-analysis/ale'
 
-    " Cool Icons
-    Plug 'ryanoasis/vim-devicons'
+  " Cool Icons
+  " Plug 'ryanoasis/vim-devicons'
 
-    " Intellisense
-    Plug 'neoclide/coc.nvim', {'branch': 'release'}
+  " Surround
+  " Plug 'tpope/vim-surround'
 
-    " Status Line
-    Plug 'vim-airline/vim-airline'
-    Plug 'vim-airline/vim-airline-themes'
+  " See what keys do like in emacs
+  Plug 'liuchengxu/vim-which-key'
 
-    " Surround
-    Plug 'tpope/vim-surround'
+  " snippets
+  Plug 'SirVer/ultisnips'
+  Plug 'honza/vim-snippets'
+  " Plug 'mattn/emmet-vim'
 
-    " See what keys do like in emacs
-    Plug 'liuchengxu/vim-which-key'
+  " Git
+  Plug 'mhinz/vim-signify'
+  " Plug 'airblade/vim-gitgutter'
 
-    " snippets
-    Plug 'honza/vim-snippets'
-    Plug 'mattn/emmet-vim'
+  " FZF
+  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
+  Plug 'junegunn/fzf.vim'
+  " Plug 'airblade/vim-rooter'
 
-    " Start Screen
-    Plug 'mhinz/vim-startify'
+  " Tab
+  Plug 'kyazdani42/nvim-web-devicons'
+  Plug 'romgrk/barbar.nvim'
 
-    " Git
-    Plug 'airblade/vim-gitgutter'
-    Plug 'tpope/vim-fugitive'
-    Plug 'tpope/vim-rhubarb'
-    Plug 'junegunn/gv.vim'
-
-    " FZF
-    Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-    Plug 'junegunn/fzf.vim'
-    Plug 'airblade/vim-rooter'
+  Plug 'tweekmonster/startuptime.vim'
 
 call plug#end()
