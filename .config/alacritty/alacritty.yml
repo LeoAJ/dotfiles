@@ -54,7 +54,7 @@ font:
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
 
-# background_opacity: 0.8
+background_opacity: 0.8
 
 # Cursor colors
 cursor:
