@@ -19,6 +19,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Close tag
   Plug 'alvan/vim-closetag'
+  
+  " Format
+  Plug 'dense-analysis/ale'
 
   " Cool Icons
   " Plug 'ryanoasis/vim-devicons'
