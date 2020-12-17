@@ -11,8 +11,6 @@ source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/closetags.vim
 source $HOME/.config/nvim/plug-config/ale.vim
 
-"
-"
 "     __                  _   __         _    ___         
 "    / /   ___  ____     / | / /__  ____| |  / (_)___ ___ 
 "   / /   / _ \/ __ \   /  |/ / _ \/ __ \ | / / / __ `__ \
