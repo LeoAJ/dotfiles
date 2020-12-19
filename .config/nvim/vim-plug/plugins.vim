@@ -23,9 +23,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Format
   Plug 'dense-analysis/ale'
 
-  " Cool Icons
-  " Plug 'ryanoasis/vim-devicons'
-
   " Surround
   " Plug 'tpope/vim-surround'
 
@@ -39,6 +36,9 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Git
   Plug 'mhinz/vim-signify'
+  Plug 'junegunn/gv.vim'
+  Plug 'tpope/vim-rhubarb'
+  Plug 'tpope/vim-fugitive'
   " Plug 'airblade/vim-gitgutter'
 
   " FZF
@@ -46,8 +46,10 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'junegunn/fzf.vim'
   " Plug 'airblade/vim-rooter'
 
-  " Tab
+  " Cool Icons
   Plug 'kyazdani42/nvim-web-devicons'
+
+  " Tab
   Plug 'romgrk/barbar.nvim'
 
   Plug 'tweekmonster/startuptime.vim'
