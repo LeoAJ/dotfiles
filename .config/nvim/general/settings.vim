@@ -22,7 +22,6 @@ set autoindent
 set clipboard=unnamedplus
 set formatoptions-=cro
 set updatetime=300
-set timeoutlen=100
 set noru
 set smartcase
 set nobackup
