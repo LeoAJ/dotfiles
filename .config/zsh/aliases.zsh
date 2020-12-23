@@ -45,6 +45,7 @@ alias e="exit"
 alias np="npm"
 alias ca="cat"
 alias ba="bat"
+alias nn="nnn -de"
 
 alias \
 	cp="cp -iv" \

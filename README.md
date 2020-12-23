@@ -37,9 +37,9 @@ copy `nvim` folder to `~/.config/nvim`
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [z](https://github.com/rupa/z)
+- [bat](https://github.com/sharkdp/bat)
 - zsh-syntax-highlighting
 - yarn
-- bat
 - tree
 - the_silver_searcher
 - fd
@@ -56,11 +56,10 @@ copy `nvim` folder to `~/.config/nvim`
 
 ## Bat
 
-https://github.com/sharkdp/bat#output-style
+generate `bat` config file
 
 ```
---theme="gruvbox"
---style="changes"
+bat --generate-config-file
 ```
 
 ## [DEPRECATE] iTerm2
