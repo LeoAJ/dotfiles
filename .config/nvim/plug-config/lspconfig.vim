@@ -13,14 +13,10 @@
     vim.api.nvim_buf_set_keymap(bufnr, 'n', 'gr', '<cmd>lua vim.lsp.buf.references()<CR>', opts)
     vim.api.nvim_buf_set_keymap(bufnr, 'n', '<leader>xd', '<cmd>lua vim.lsp.util.show_line_diagnostics()<CR>', opts)
   end
-  local servers = {'diagnosticls', 'tsserver', 'cssls'}
+  local servers = {'diagnosticls', 'html', 'tsserver', 'cssls'}
   for _, lsp in ipairs(servers) do
     nvim_lsp[lsp].setup {
       on_attach = on_attach,
     }
   end
 EOF
-
-command! -buffer -nargs=0 LspShowLineDiagnostics lua require'jumpLoc'.openLineDiagnostics()
-nnoremap <buffer><silent> <C-h> <cmd>LspShowLineDiagnostics<CR>
-command! Format execute 'lua vim.lsp.buf.formatting()'

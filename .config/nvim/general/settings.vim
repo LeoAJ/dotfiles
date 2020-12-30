@@ -22,6 +22,7 @@ set autoindent
 set clipboard=unnamedplus
 set formatoptions-=cro
 set updatetime=300
+set ttimeoutlen=100
 set noru
 set smartcase
 set nobackup
@@ -30,7 +31,12 @@ set splitbelow
 set splitright
 set inccommand=split
 set swb=useopen
-set cot=menuone,noinsert,noselect shm+=c
+
+" Set completeopt to have a better completion experience
+set completeopt=menuone,noinsert,noselect
+
+" Avoid showing message extra message when using completion
+set shortmess+=c
 
 augroup LuaHighlight
   autocmd!

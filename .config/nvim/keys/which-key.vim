@@ -27,6 +27,7 @@ autocmd  FileType which_key set laststatus=0 noshowmode noruler
 let g:which_key_map['.'] = [ ':e $MYVIMRC'                          , 'open init' ]
 let g:which_key_map['='] = [ '<C-W>='                               , 'balance windows' ]
 let g:which_key_map['a'] = [ ':e ~/.config/alacritty/alacritty.yml' , 'alacritty' ]
+let g:which_key_map['b'] = [ ':BLines'                              , 'current buffer']
 let g:which_key_map['c'] = [ ':Commands'                            , 'commands' ]
 let g:which_key_map['d'] = [ ':bd'                                  , 'delete buffer']
 let g:which_key_map['f'] = [ ':Files'                               , 'search files' ]

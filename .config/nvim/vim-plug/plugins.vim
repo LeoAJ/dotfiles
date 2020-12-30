@@ -39,25 +39,16 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " snippets
   Plug 'SirVer/ultisnips'
   Plug 'honza/vim-snippets'
-  " Plug 'mattn/emmet-vim'
 
   " Git
   Plug 'mhinz/vim-signify'
-  Plug 'junegunn/gv.vim'
-  Plug 'tpope/vim-rhubarb'
-  Plug 'tpope/vim-fugitive'
-  " Plug 'airblade/vim-gitgutter'
 
   " FZF
   Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
   Plug 'junegunn/fzf.vim'
-  " Plug 'airblade/vim-rooter'
-
-  " Cool Icons
-  Plug 'kyazdani42/nvim-web-devicons'
 
   " Tab
-  Plug 'romgrk/barbar.nvim'
+  Plug 'ap/vim-buftabline'
 
   Plug 'tweekmonster/startuptime.vim'
 
