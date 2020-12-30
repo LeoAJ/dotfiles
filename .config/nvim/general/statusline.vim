@@ -1,15 +1,20 @@
 function! GitBranch()
-  return system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
+  let g:git_branch = system("git rev-parse --abbrev-ref HEAD 2>/dev/null | tr -d '\n'")
 endfunction
 
-function! StatuslineGit()
-  let l:branchname = GitBranch()
-  return strlen(l:branchname) > 0?'  '.l:branchname.' ':''
+function! StatuslineGitBranch()
+    if exists("g:git_branch")
+        return '  '.g:git_branch.' '
+    else
+        return ''
+    endif
 endfunction
+
+autocmd BufEnter * call GitBranch()
 
 set statusline=
 set statusline+=%#PmenuSel#
-set statusline+=%{StatuslineGit()}
+set statusline+=%{StatuslineGitBranch()}
 set statusline+=%#LineNr#
 set statusline+=\ %f
 set statusline+=%m

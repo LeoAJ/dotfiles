@@ -11,10 +11,14 @@ source $HOME/.config/nvim/plug-config/fzf.vim
 source $HOME/.config/nvim/plug-config/rainbow.vim
 source $HOME/.config/nvim/plug-config/closetags.vim
 source $HOME/.config/nvim/plug-config/ale.vim
+source $HOME/.config/nvim/plug-config/ultisnips.vim
 
+"
+"
 "     __                  _   __         _    ___         
 "    / /   ___  ____     / | / /__  ____| |  / (_)___ ___ 
 "   / /   / _ \/ __ \   /  |/ / _ \/ __ \ | / / / __ `__ \
 "  / /___/  __/ /_/ /  / /|  /  __/ /_/ / |/ / / / / / / /
 " /_____/\___/\____/  /_/ |_/\___/\____/|___/_/_/ /_/ /_/
 "
+
