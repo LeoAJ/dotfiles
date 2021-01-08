@@ -50,6 +50,8 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Tab
   Plug 'ap/vim-buftabline'
 
+  Plug 'romainl/vim-cool'
+
   Plug 'tweekmonster/startuptime.vim'
 
 call plug#end()

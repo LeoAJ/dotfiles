@@ -13,8 +13,8 @@ set t_Co=256
 set conceallevel=0
 set tabstop=2
 set shiftwidth=2
-set relativenumber
-set number
+set norelativenumber
+set nonumber
 set smarttab
 set expandtab
 set smartindent
@@ -31,6 +31,7 @@ set splitbelow
 set splitright
 set inccommand=split
 set swb=useopen
+set incsearch
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
