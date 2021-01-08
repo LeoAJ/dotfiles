@@ -46,6 +46,13 @@ alias np="npm"
 alias ca="cat"
 alias ba="bat"
 alias nn="nnn -de"
+alias sz="source ~/.zshrc"
+
+# config
+alias na="nvim ~/.config/alacritty/alacritty.yml"
+alias ni="nvim ~/.config/nvim/init.vim"
+alias nt="nvim ~/.tmux.conf"
+alias nz="nvim ~/.zshrc"
 
 alias \
 	cp="cp -iv" \
