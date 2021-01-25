@@ -32,6 +32,9 @@ set splitright
 set inccommand=split
 set swb=useopen
 set incsearch
+set signcolumn=yes
+set number
+set relativenumber
 
 " Set completeopt to have a better completion experience
 set completeopt=menuone,noinsert,noselect
