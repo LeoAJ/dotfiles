@@ -32,7 +32,6 @@ let g:which_key_map['c'] = [ ':Commands'                            , 'commands'
 let g:which_key_map['d'] = [ ':bd'                                  , 'delete buffer']
 let g:which_key_map['f'] = [ ':Files'                               , 'search files' ]
 let g:which_key_map['h'] = [ '<C-W>s'                               , 'split below']
-let g:which_key_map['n'] = [ ':let @/ = ""'                         , 'remove search highlight']
 let g:which_key_map['r'] = [ ':Rg'                                  , 'search text' ]
 let g:which_key_map['s'] = [ ':Snippets'                            , 'snippets']
 let g:which_key_map['v'] = [ '<C-W>v'                               , 'split right']
