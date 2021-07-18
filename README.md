@@ -61,3 +61,8 @@ generate `bat` config file
 ```
 bat --generate-config-file
 ```
+
+## Links
+
+* [craftzdog](https://github.com/craftzdog/dotfiles-public)
+* [LunarVim](https://github.com/ChristianChiarulli/LunarVim)
