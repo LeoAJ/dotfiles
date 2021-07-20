@@ -3,9 +3,8 @@ let g:mapleader = "\<Space>"
 
 " enable true color
 let $NVIM_TUI_ENABLE_TRUE_COLOR=1
-set termguicolors
 
-syntax enable
+set encoding=UTF-8
 set hid
 set nowrap
 set iskeyword+=-

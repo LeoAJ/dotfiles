@@ -6,52 +6,66 @@ if empty(glob('~/.config/nvim/autoload/plug.vim'))
 endif
 
 call plug#begin('~/.config/nvim/autoload/plugged')
+  " icon
+  Plug 'kyazdani42/nvim-web-devicons'
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
-  Plug 'nvim-lua/completion-nvim'
+  Plug 'folke/lsp-colors.nvim'
+  Plug 'glepnir/lspsaga.nvim'
+  Plug 'hrsh7th/nvim-compe'
+  Plug 'onsails/lspkind-nvim'
+
+  " telescope
+  Plug 'nvim-lua/popup.nvim'
+  Plug 'nvim-lua/plenary.nvim'
+  Plug 'nvim-telescope/telescope.nvim'
+  Plug 'nvim-telescope/telescope-fzy-native.nvim'
 
   " Better Syntax Support
-  Plug 'nvim-treesitter/nvim-treesitter'
+  Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+  Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
   
   " Auto pairs for '(' '[' '{' 
-  Plug 'jiangmiao/auto-pairs'
-  Plug 'junegunn/rainbow_parentheses.vim'
+  Plug 'windwp/nvim-autopairs'
 
   " Better Comments
-  Plug 'tpope/vim-commentary'
+  Plug 'terrortylor/nvim-comment'
 
   " Theme
-  Plug 'lifepillar/vim-gruvbox8'
+  " Plug 'lifepillar/vim-gruvbox8'
+  " Plug 'chriskempson/base16-vim'
+  " Plug 'phanviet/vim-monokai-pro'
+  Plug 'NLKNguyen/papercolor-theme'
 
   " Close tag
-  Plug 'alvan/vim-closetag'
+  " Plug 'alvan/vim-closetag'
   
   " Format
-  Plug 'dense-analysis/ale'
+  Plug 'mhartington/formatter.nvim'
 
   " Surround
   " Plug 'tpope/vim-surround'
 
   " See what keys do like in emacs
-  Plug 'liuchengxu/vim-which-key'
+  Plug 'folke/which-key.nvim'
 
   " snippets
-  Plug 'SirVer/ultisnips'
-  Plug 'honza/vim-snippets'
+  " Plug 'SirVer/ultisnips'
+  " Plug 'honza/vim-snippets'
 
-  " Git
-  Plug 'mhinz/vim-signify'
-
-  " FZF
-  Plug 'junegunn/fzf', { 'do': { -> fzf#install() } }
-  Plug 'junegunn/fzf.vim'
+  " " Git
+  Plug 'lewis6991/gitsigns.nvim'
 
   " Tab
-  Plug 'ap/vim-buftabline'
+  " Plug 'ap/vim-buftabline'
 
   Plug 'romainl/vim-cool'
 
-  Plug 'tweekmonster/startuptime.vim'
+  Plug 'airblade/vim-rooter'
 
+  " explorer
+  Plug 'kyazdani42/nvim-tree.lua'
+
+  Plug 'tweekmonster/startuptime.vim'
 call plug#end()
