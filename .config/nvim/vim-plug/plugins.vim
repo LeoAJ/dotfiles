@@ -35,7 +35,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Theme
   " Plug 'lifepillar/vim-gruvbox8'
   " Plug 'chriskempson/base16-vim'
-  " Plug 'phanviet/vim-monokai-pro'
+  Plug 'phanviet/vim-monokai-pro'
   Plug 'NLKNguyen/papercolor-theme'
 
   " Close tag
@@ -54,10 +54,13 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   " Plug 'SirVer/ultisnips'
   " Plug 'honza/vim-snippets'
 
+  Plug 'glepnir/galaxyline.nvim' , {'branch': 'main'}
+
   " " Git
   Plug 'lewis6991/gitsigns.nvim'
 
   " Tab
+  Plug 'romgrk/barbar.nvim'
   " Plug 'ap/vim-buftabline'
 
   Plug 'romainl/vim-cool'
