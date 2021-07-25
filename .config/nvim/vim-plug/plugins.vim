@@ -11,6 +11,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " LSP
   Plug 'neovim/nvim-lspconfig'
+  Plug 'kabouzeid/nvim-lspinstall'
   Plug 'folke/lsp-colors.nvim'
   Plug 'glepnir/lspsaga.nvim'
   Plug 'hrsh7th/nvim-compe'
@@ -24,6 +25,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
 
   " Better Syntax Support
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
+  Plug 'nvim-treesitter/nvim-treesitter-textobjects'
   Plug 'jose-elias-alvarez/nvim-lsp-ts-utils'
   
   " Auto pairs for '(' '[' '{' 
@@ -33,10 +35,12 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'terrortylor/nvim-comment'
 
   " Theme
+  Plug 'gruvbox-community/gruvbox'
   " Plug 'lifepillar/vim-gruvbox8'
   " Plug 'chriskempson/base16-vim'
-  Plug 'phanviet/vim-monokai-pro'
-  Plug 'NLKNguyen/papercolor-theme'
+  " Plug 'phanviet/vim-monokai-pro'
+  " Plug 'NLKNguyen/papercolor-theme'
+  Plug 'fratajczak/one-monokai-vim'
 
   " Close tag
   " Plug 'alvan/vim-closetag'

@@ -13,6 +13,7 @@ luafile $HOME/.config/nvim/plug-config/autopairs.lua
 luafile $HOME/.config/nvim/plug-config/nvim-comment.lua
 luafile $HOME/.config/nvim/plug-config/gitsigns.lua
 luafile $HOME/.config/nvim/plug-config/formatter.lua
+luafile $HOME/.config/nvim/plug-config/galaxyline.lua
 source $HOME/.config/nvim/plug-config/treesitter.vim
 source $HOME/.config/nvim/plug-config/telescope.vim
 source $HOME/.config/nvim/plug-config/vim-rooter.vim
