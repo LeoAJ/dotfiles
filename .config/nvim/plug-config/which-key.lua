@@ -17,11 +17,14 @@ local opts = {
 }
 
 local mappings = {
+  ["."] = {"<cmd>e ~/.config/nvim/init.vim<CR>", "Open Init"},
+  ["a"] = {"<cmd>e ~/.config/alacritty/alacritty.yml<CR>", "Alacritty"},
+  ["z"] = {"<cmd>e ~/.zshrc<CR>", "Zshrc"},
   ["w"] = {"<cmd>w!<CR>", "Save"},
   ["q"] = {"<cmd>q!<CR>", "Quit"},
   ["/"] = {"<cmd>CommentToggle<CR>", "Comment"},
   ["d"] = {"<cmd>BufferClose<CR>", "Close Buffer"},
-  ["e"] = {"<cmd>lua require'core.nvimtree'.toggle_tree()<CR>", "Explorer"},
+  ["e"] = {"<cmd>lua require'nvim'.toggle_tree()<CR>", "Explorer"},
   ["f"] = {"<cmd>Telescope find_files<CR>", "Find File"},
   ["h"] = {'<cmd>let @/=""<CR>', "No Highlight"},
   ["p"] = {"<cmd>lua vim.lsp.buf.formatting_sync(nil, 100)<cr>", "Format"},
