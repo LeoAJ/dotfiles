@@ -1,6 +1,13 @@
 local wk = require "which-key"
 
 local opts = {
+  setup = {
+    icons = {
+      breadcrumb = "»", -- symbol used in the command line area that shows your active key combo
+      separator = "➜", -- symbol used between a key and it's label
+      group = "+" -- symbol prepended to a group
+    }
+  },
   mode = "n", -- NORMAL mode
   prefix = "<leader>",
   buffer = nil, -- Global mappings. Specify a buffer number for buffer local mappings
@@ -17,6 +24,28 @@ local mappings = {
   ["e"] = {"<cmd>lua require'core.nvimtree'.toggle_tree()<CR>", "Explorer"},
   ["f"] = {"<cmd>Telescope find_files<CR>", "Find File"},
   ["h"] = {'<cmd>let @/=""<CR>', "No Highlight"},
+  ["p"] = {"<cmd>lua vim.lsp.buf.formatting_sync(nil, 100)<cr>", "Format"},
+  g = {
+    name = "Git",
+    j = {"<cmd>lua require 'gitsigns'.next_hunk()<cr>", "Next Hunk"},
+    k = {"<cmd>lua require 'gitsigns'.prev_hunk()<cr>", "Prev Hunk"},
+    l = {"<cmd>lua require 'gitsigns'.blame_line()<cr>", "Blame"},
+    p = {"<cmd>lua require 'gitsigns'.preview_hunk()<cr>", "Preview Hunk"},
+    r = {"<cmd>lua require 'gitsigns'.reset_hunk()<cr>", "Reset Hunk"},
+    R = {"<cmd>lua require 'gitsigns'.reset_buffer()<cr>", "Reset Buffer"},
+    s = {"<cmd>lua require 'gitsigns'.stage_hunk()<cr>", "Stage Hunk"},
+    u = {
+      "<cmd>lua require 'gitsigns'.undo_stage_hunk()<cr>",
+      "Undo Stage Hunk"
+    },
+    o = {"<cmd>Telescope git_status<cr>", "Open changed file"},
+    b = {"<cmd>Telescope git_branches<cr>", "Checkout branch"},
+    c = {"<cmd>Telescope git_commits<cr>", "Checkout commit"},
+    C = {
+      "<cmd>Telescope git_bcommits<cr>",
+      "Checkout commit(for current file)"
+    }
+  },
   B = {
     name = "Buffers",
     j = {"<cmd>BufferPick<cr>", "jump to buffer"},
