@@ -24,7 +24,7 @@ local mappings = {
   ["q"] = {"<cmd>q!<CR>", "Quit"},
   ["/"] = {"<cmd>CommentToggle<CR>", "Comment"},
   ["d"] = {"<cmd>BufferClose<CR>", "Close Buffer"},
-  ["e"] = {"<cmd>lua require'nvim'.toggle_tree()<CR>", "Explorer"},
+  ["e"] = {"<cmd>lua require'plug-config.nvimtree'.toggle_tree()<CR>", "Explorer"},
   ["f"] = {"<cmd>Telescope find_files<CR>", "Find File"},
   ["h"] = {'<cmd>let @/=""<CR>', "No Highlight"},
   ["p"] = {"<cmd>lua vim.lsp.buf.formatting_sync(nil, 100)<cr>", "Format"},
