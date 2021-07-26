@@ -30,6 +30,7 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   
   " Auto pairs for '(' '[' '{' 
   Plug 'windwp/nvim-autopairs'
+  Plug 'windwp/nvim-ts-autotag'
 
   " Better Comments
   Plug 'terrortylor/nvim-comment'
