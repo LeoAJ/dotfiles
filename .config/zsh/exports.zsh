@@ -1,31 +1,24 @@
-# Uncomment the following line to use case-sensitive completion.
-CASE_SENSITIVE="true"
+eval "$(fnm env)"
 
-zle_highlight=('paste:none')
-
-# Which plugins would you like to load?
-plugins=(
-  git
-  zsh-syntax-highlighting
-  zsh-autosuggestions
-  web-search
-  vi-mode
-)
-export ZSH="/Users/$USER/.oh-my-zsh"
-source $ZSH/oh-my-zsh.sh
-
-# Preferred editor for local and remote sessions
-if [[ -n $SSH_CONNECTION ]]; then
- export EDITOR='nvim'
-else
- export EDITOR='nvim'
-fi
-
-#autoload -U colors && colors
 export CLICOLOR=1
-export FZF_DEFAULT_COMMAND='rg --files --hidden'
-
-#export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
-export FZF_ALT_C_COMMAND="$FZF_DEFAULT_COMMAND"
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
+export LC_CTYPE="UTF-8"
+
+# homebrew
+export HOMEBREW_GITHUB_API_TOKEN=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
+export HOMEBREW_GITHUB_PACKAGES_TOKEN=$HOMEBREW_GITHUB_API_TOKEN
+
+# load IT-provided staging environment credentials and PIP_EXTRA_INDEX_URL
+export ARTIFACTORY_USERNAME=leo.hsieh@doordash.com
+export ARTIFACTORY_PASSWORD=AKCp8jR7GEHy7NvxXtAhdsvYG9eRVj5mRhRYjWbTjqWdhDjCppy45vo1UP4p7EYSScAisUgV7
+
+# Environment variables for android repository
+export artifactoryUser=${ARTIFACTORY_USERNAME}
+export artifactoryPassword=${ARTIFACTORY_PASSWORD}
+
+export ARTIFACTORY_URL=https://${ARTIFACTORY_USERNAME/@/%40}:${ARTIFACTORY_PASSWORD}@ddartifacts.jfrog.io/ddartifacts/api/pypi/pypi-local/simple/
+export PIP_EXTRA_INDEX_URL=${ARTIFACTORY_URL}
+
+# Helm
+export PATH="/usr/local/opt/helm@2/bin:$PATH"
