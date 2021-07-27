@@ -1,18 +1,19 @@
-unalias l
-unalias gcm
-
 # git
+alias g="git"
 alias gf="g fetch"
 alias gc="g clone"
 alias gl="g log"
 alias gst="g status"
 alias gaa="g add ."
+alias gp="g push"
 alias ggp="gp origin"
+alias gco="g checkout"
 alias ga="g add"
 alias gd="g diff"
 alias gcm='g commit --message'
 alias glp="gl --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias glol="gl --oneline"
+alias gb="g branch"
 
 # docker
 alias dk="docker"
@@ -34,7 +35,7 @@ alias f="google"
 alias s="cd .."
 alias c="clear"
 alias h="history"
-alias tr="tree"
+alias tr="tree -C"
 alias t="touch"
 alias n="nvim"
 alias l="ls -1A"
@@ -58,3 +59,5 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	mkd="mkdir -pv"
+
+alias luamake=/Users/leo/Documents/code/lua-language-server/3rd/luamake/compile/luamake
