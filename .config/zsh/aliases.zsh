@@ -14,6 +14,10 @@ alias gcm='g commit --message'
 alias glp="gl --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias glol="gl --oneline"
 alias gb="g branch"
+alias gm="g merge"
+alias gpl="g pull"
+alias gw="gh repo view --web"
+alias prs="gh pr list -l 'web risk needed'"
 
 # docker
 alias dk="docker"
