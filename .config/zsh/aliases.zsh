@@ -52,6 +52,7 @@ alias ca="cat"
 alias ba="bat"
 alias nn="nnn -de"
 alias sz="source ~/.zshrc"
+alias nza="nvim ~/.config/zsh/aliases.zsh"
 
 # config
 alias na="nvim ~/.config/alacritty/alacritty.yml"
