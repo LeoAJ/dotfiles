@@ -14,7 +14,6 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'kabouzeid/nvim-lspinstall'
   Plug 'folke/lsp-colors.nvim'
   Plug 'glepnir/lspsaga.nvim'
-  Plug 'hrsh7th/nvim-compe'
   Plug 'onsails/lspkind-nvim'
 
   " telescope
@@ -22,6 +21,11 @@ call plug#begin('~/.config/nvim/autoload/plugged')
   Plug 'nvim-lua/plenary.nvim'
   Plug 'nvim-telescope/telescope.nvim'
   Plug 'nvim-telescope/telescope-fzy-native.nvim'
+
+  " complete
+  Plug 'hrsh7th/cmp-nvim-lsp'
+  Plug 'hrsh7th/cmp-buffer'
+  Plug 'hrsh7th/nvim-cmp'
 
   " Better Syntax Support
   Plug 'nvim-treesitter/nvim-treesitter', {'do': ':TSUpdate'} 
