@@ -15,7 +15,8 @@ luafile $HOME/.config/nvim/plug-config/which-key.lua
 luafile $HOME/.config/nvim/plug-config/treesitter.lua
 luafile $HOME/.config/nvim/plug-config/telescope.lua
 luafile $HOME/.config/nvim/plug-config/vim-rooter.lua
-luafile $HOME/.config/nvim/plug-config/compe-config.lua
+" luafile $HOME/.config/nvim/plug-config/compe-config.lua
+luafile $HOME/.config/nvim/plug-config/cmp.lua
 source $HOME/.config/nvim/general/settings.vim
 source $HOME/.config/nvim/keys/mappings.vim
 
