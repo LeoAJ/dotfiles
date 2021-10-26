@@ -1,0 +1,11 @@
+require('plugins')
+-- require('settings')
+require('nvim-comment')
+require('treesitter')
+require('cmp-config')
+require('lsp-config')
+require('autopairs')
+require('telescope-config')
+require('wk')
+
+vim.cmd('colorscheme gruvbox')
