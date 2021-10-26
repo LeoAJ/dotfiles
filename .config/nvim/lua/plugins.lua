@@ -39,5 +39,14 @@ return require('packer').startup(function(use)
 
   use 'onsails/lspkind-nvim'
 
-  use {'folke/which-key.nvim'}
+  use 'romainl/vim-cool'
+
+  -- tab
+  use {
+    'romgrk/barbar.nvim',
+    requires = {'kyazdani42/nvim-web-devicons'}
+  }
+
+  -- whick key
+  use 'folke/which-key.nvim'
 end)
