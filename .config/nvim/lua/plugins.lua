@@ -6,6 +6,10 @@ return require('packer').startup(function(use)
   use 'neovim/nvim-lspconfig'
   use 'williamboman/nvim-lsp-installer'
   use 'folke/lsp-colors.nvim'
+  use({
+    "tami5/lspsaga.nvim",
+    commit = "276822b611b26be2e52a31d8eef1ccce30b819a5",
+  })
 
   -- theme
   use 'gruvbox-community/gruvbox'
