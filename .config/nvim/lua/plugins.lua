@@ -19,6 +19,7 @@ return require('packer').startup(function(use)
 
   -- autopair
   use 'windwp/nvim-autopairs'
+  use 'windwp/nvim-ts-autotag'
 
   -- treesitter
   use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
