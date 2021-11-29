@@ -26,6 +26,7 @@ local mappings = {
   ["d"] = {"<cmd>BufferClose<CR>", "Close Buffer"},
   ["e"] = {"<cmd>:Ex<CR>", "Explorer"},
   ["f"] = {"<cmd>Telescope find_files<CR>", "Find File"},
+  ["r"] = {"<cmd>Telescope live_grep<CR>", "Rg"},
   ["h"] = {'<cmd>let @/=""<CR>', "No Highlight"},
   ["p"] = {"<cmd>lua vim.lsp.buf.formatting_sync(nil, 100)<cr>", "Format"},
   g = {
