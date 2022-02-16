@@ -10,7 +10,7 @@ alias ggp="gp origin"
 alias gco="g checkout"
 alias ga="g add"
 alias gd="g diff"
-alias gcm='g commit --message'
+alias gcm='g commit -am'
 alias glp="gl --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
 alias glol="gl --oneline"
 alias gb="g branch"
