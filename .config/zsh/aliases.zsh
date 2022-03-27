@@ -18,6 +18,7 @@ alias gm="g merge"
 alias gpl="g pull"
 alias gw="gh repo view --web"
 alias prs="gh pr list -l 'web risk needed'"
+alias gv="gh repo view --web"
 
 # docker
 alias dk="docker"
@@ -52,13 +53,13 @@ alias ca="cat"
 alias ba="bat"
 alias nn="nnn -de"
 alias sz="source ~/.zshrc"
-alias nza="nvim ~/.config/zsh/aliases.zsh"
 
 # config
 alias na="nvim ~/.config/alacritty/alacritty.yml"
 alias ni="nvim ~/.config/nvim/init.vim"
 alias nt="nvim ~/.tmux.conf"
 alias nz="nvim ~/.zshrc"
+alias nza="nvim ~/.config/zsh/aliases.zsh"
 
 alias \
 	cp="cp -iv" \
