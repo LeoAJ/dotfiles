@@ -1,6 +1,6 @@
 # Dotfiles
 
-A growing collection of dotfiles.
+My dotfiles config
 
 ## Setting
 
