@@ -7,6 +7,7 @@ env:
   TERM: xterm-256color
 
 window:
+  opacity: 0.8
   dimensions:
     columns: 60
     lines: 40
@@ -33,18 +34,18 @@ scrolling:
 # Hack Nerd Font
 font:
   normal:
-    family: CaskaydiaCove Nerd Font
+    family: Hack Nerd Font
     style: Regular
   bold:
-    family: CaskaydiaCove Nerd Font
+    family: Hack Nerd Font
     style: Bold
-  # italic:
-  #   family: CaskaydiaCove Nerd Font
-  #   style: Italic
+  italic:
+    family: Hack Nerd Font
+    style: Italic
   # bold_italic:
   #   family: Hack Nerd Font
   #   style: Bold Italic
-  size: 24
+  size: 20 
   offset:
     x: 0
     y: 0
@@ -55,8 +56,6 @@ font:
 
 # If `true`, bold text is drawn using the bright color variants.
 draw_bold_text_with_bright_colors: true
-
-background_opacity: 0.8
 
 # Cursor colors
 cursor:
