@@ -24,6 +24,12 @@ https://github.com/eendroroy/alacritty-theme
 brew install neovim
 ```
 
+#### AstroNvim
+
+https://github.com/AstroNvim/AstroNvim
+
+#### Without AstroNvim
+
 copy `nvim` folder to `~/.config/nvim`
 
 install [packer](https://github.com/wbthomason/packer.nvim) to install plugins
