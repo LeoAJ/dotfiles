@@ -77,7 +77,15 @@ local config = {
     init = {
       -- You can disable default plugins as follows:
       ["goolord/alpha-nvim"] = { disable = true },
-
+      {
+        "jose-elias-alvarez/typescript.nvim",
+        after = "nvim-lsp-installer",
+        config = function()
+          require("typescript").setup {
+            server = astronvim.lsp.server_settings "tsserver",
+          }
+        end,
+      },
       { "gruvbox-community/gruvbox" },
       { "romainl/vim-cool" }
       -- You can also add new plugins here as well:
@@ -116,10 +124,10 @@ local config = {
       return config -- return final config table
     end,
     treesitter = {
-      ensure_installed = { "lua" },
+      ensure_installed = { "lua", "typescript" },
     },
     ["nvim-lsp-installer"] = {
-      ensure_installed = { "sumneko_lua" },
+      ensure_installed = { "sumneko_lua", "tsserver" },
     },
     packer = {
       compile_path = vim.fn.stdpath "data" .. "/packer_compiled.lua",
@@ -168,6 +176,9 @@ local config = {
 
   -- Extend LSP configuration
   lsp = {
+    skip_setup = {
+      "tsserver"
+    },
     -- enable servers that you already have installed without lsp-installer
     servers = {
       -- "pyright"
