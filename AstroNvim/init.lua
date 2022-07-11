@@ -239,6 +239,13 @@ local config = {
   -- This function is run last
   -- good place to configuring augroups/autocommands and custom filetypes
   polish = function()
+    -- highlight when yank
+    vim.cmd[[
+      augroup highlight_yank
+        autocmd!
+        au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
+      augroup END
+    ]]
     -- Set key binding
     -- Set autocommands
     vim.api.nvim_create_augroup("packer_conf", { clear = true })
