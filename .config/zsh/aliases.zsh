@@ -56,7 +56,7 @@ alias sz="source ~/.zshrc"
 
 # config
 alias na="nvim ~/.config/alacritty/alacritty.yml"
-alias ni="nvim ~/.config/nvim/init.vim"
+alias ni="nvim ~/.config/nvim/lua/user/init.lua"
 alias nt="nvim ~/.tmux.conf"
 alias nz="nvim ~/.zshrc"
 alias nza="nvim ~/.config/zsh/aliases.zsh"
