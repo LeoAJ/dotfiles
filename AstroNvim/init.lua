@@ -124,7 +124,28 @@ local config = {
       return config -- return final config table
     end,
     treesitter = {
-      ensure_installed = { "lua", "typescript" },
+      ensure_installed = { 
+        "bash",
+        "comment",
+        "dockerfile",
+        "graphql",
+        "html",
+        "java",
+        "javascript",
+        "jsdoc",
+        "json",
+        "json5",
+        "kotlin",
+        "lua", 
+        "make",
+        "proto",
+        "python",
+        "tsx",
+        "typescript",
+        "sql",
+        "vim",
+        "yaml"
+      },
     },
     ["nvim-lsp-installer"] = {
       ensure_installed = { "sumneko_lua", "tsserver" },
