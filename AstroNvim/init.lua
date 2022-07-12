@@ -76,6 +76,7 @@ local config = {
     -- Add plugins, the packer syntax without the "use"
     init = {
       -- You can disable default plugins as follows:
+      ["neovim-session-manager"] = { disable = true },
       ["goolord/alpha-nvim"] = { disable = true },
       {
         "jose-elias-alvarez/typescript.nvim",
@@ -173,6 +174,39 @@ local config = {
       n = {
         -- second key is the prefix, <leader> prefixes
         ["<leader>"] = {
+          d = { "<cmd>bdelete<cr>", "Close window" },
+          F = {
+            function()
+              require("telescope.builtin").find_files { hidden = true, no_ignore = true }
+            end,
+            "Search all files"
+          },
+          f = {
+            function()
+              require("telescope.builtin").find_files()
+            end,
+            "Search all files"
+          },
+          h = {
+            function()
+              require("telescope.builtin").oldfiles()
+            end,
+            "Search history"
+          },
+          R = {
+            function()
+              require("telescope.builtin").live_grep {
+                additional_args = function(args) return vim.list_extend(args, { "--hidden", "--no-ignore" }) end,
+              }
+            end,
+            "Search words in all files"
+          },
+          r = {
+            function()
+              require("telescope.builtin").live_grep()
+            end,
+            "Search words"
+          },
           -- which-key registration table for normal mode, leader prefix
           -- ["N"] = { "<cmd>tabnew<cr>", "New Buffer" },
         },
@@ -260,6 +294,13 @@ local config = {
   -- This function is run last
   -- good place to configuring augroups/autocommands and custom filetypes
   polish = function()
+    local unmap = vim.api.nvim_del_keymap
+    -- unmap default bindings
+    unmap("n", "<leader>c")
+    unmap("n", "<leader>o")
+    unmap("n", "<leader>tp")
+    unmap("n", "<leader>tt")
+    unmap("n", "<leader>tu")
     -- highlight when yank
     vim.cmd[[
       augroup highlight_yank
