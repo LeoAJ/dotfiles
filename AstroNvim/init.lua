@@ -185,7 +185,7 @@ local config = {
             function()
               require("telescope.builtin").find_files()
             end,
-            "Search all files"
+            "Search files"
           },
           h = {
             function()
@@ -296,8 +296,11 @@ local config = {
   polish = function()
     local unmap = vim.api.nvim_del_keymap
     -- unmap default bindings
+    unmap("n", "<leader>/")
     unmap("n", "<leader>c")
+    unmap("n", "<leader>q")
     unmap("n", "<leader>o")
+    unmap("n", "<leader>w")
     unmap("n", "<leader>tp")
     unmap("n", "<leader>tt")
     unmap("n", "<leader>tu")
