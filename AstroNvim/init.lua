@@ -107,9 +107,9 @@ local config = {
       -- https://github.com/jose-elias-alvarez/null-ls.nvim/tree/main/lua/null-ls/builtins/diagnostics
       config.sources = {
         -- Set a formatter
-        null_ls.builtins.formatting.rufo,
+        null_ls.builtins.formatting.prettier,
         -- Set a linter
-        null_ls.builtins.diagnostics.rubocop,
+        null_ls.builtins.diagnostics.eslint,
       }
       -- set up null-ls's on_attach function
       config.on_attach = function(client)
@@ -118,7 +118,9 @@ local config = {
           vim.api.nvim_create_autocmd("BufWritePre", {
             desc = "Auto format before save",
             pattern = "<buffer>",
-            callback = vim.lsp.buf.formatting_sync,
+            callback = function()
+              vim.lsp.buf.formatting_sync(nil, 2000)
+            end,
           })
         end
       end
