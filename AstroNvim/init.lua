@@ -99,6 +99,13 @@ local config = {
       --   end,
       -- },
     },
+    ["neo-tree"] = {
+      filesystem = {
+        filtered_items = {
+          hide_dotfiles = false
+        }
+      }
+    },
     -- All other entries override the setup() call for default plugins
     ["null-ls"] = function(config)
       local null_ls = require "null-ls"
