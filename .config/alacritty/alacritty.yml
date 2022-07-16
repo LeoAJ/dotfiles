@@ -99,34 +99,45 @@ live_config_reload: true
 #  args:
 #    - --login
 
-# Colors (Material Theme)
+# Colors
 colors:
   # Default colors
   primary:
-    background: '#263238'
-    foreground: '#eeffff'
+    background:        '#011627'
+    foreground:        '#acb4c2'
+    bright_foreground: '#eeeeee'
+
+  # Cursor colors
+  cursor:
+    text:   '#080808'
+    cursor: '#9ca1aa'
+
+  # Selection colors
+  selection:
+    text:       '#080808'
+    background: '#b2ceee'
 
   # Normal colors
   normal:
-    black:   '#000000'  # Arbitrary
-    red:     '#e53935'
-    green:   '#91b859'
-    yellow:  '#ffb62c'
-    blue:    '#6182b8'
-    magenta: '#ff5370'  # Dark pink of the original material theme
-    cyan:    '#39adb5'
-    white:   '#a0a0a0'  # Arbitrary
+    black:   '#1d3b53'
+    red:     '#fc514e'
+    green:   '#a1cd5e'
+    yellow:  '#e3d18a'
+    blue:    '#82aaff'
+    magenta: '#c792ea'
+    cyan:    '#7fdbca'
+    white:   '#a1aab8'
 
   # Bright colors
   bright:
-    black:   '#4e4e4e'  # Arbitrary
-    red:     '#ff5370'
-    green:   '#c3e88d'
-    yellow:  '#ffcb6b'
+    black:   '#7c8f8f'
+    red:     '#ff5874'
+    green:   '#21c7a8'
+    yellow:  '#ecc48d'
     blue:    '#82aaff'
-    magenta: '#f07178'  # Pink of the original material theme
-    cyan:    '#89ddff'
-    white:   '#ffffff'  # Arbitrary
+    magenta: '#ae81ff'
+    cyan:    '#7fdbca'
+    white:   '#d6deeb'
 
 key_bindings:
   # - { key: Equals, mods: Shift, action: IncreaseFontSize }
