@@ -18,7 +18,7 @@ local config = {
   },
 
   -- Set colorscheme
-  colorscheme = "gruvbox",
+  colorscheme = "nightfly",
 
   -- set vim options here (vim.<first_key>.<second_key> =  value)
   options = {
@@ -87,7 +87,7 @@ local config = {
           }
         end,
       },
-      { "gruvbox-community/gruvbox" },
+      { "bluz71/vim-nightfly-guicolors" },
       { "romainl/vim-cool" }
       -- You can also add new plugins here as well:
       -- { "andweeb/presence.nvim" },
