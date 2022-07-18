@@ -2,9 +2,6 @@ export PATH=/Users/leo/.cargo/bin:/Users/leo/Library/Caches/fnm_multishells/5367
 
 if [ "$TMUX" = "" ]; then tmux; fi
 
-# zsh config dir
-export ZDOTDIR=$HOME/.config/zsh
-
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
