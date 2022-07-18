@@ -2,6 +2,23 @@
 
 My dotfiles config
 
+## Zsh
+
+do
+
+```bash
+echo $PATH
+
+```
+
+copy value and paste in `.config/zsh/.zshrc`
+
+```bash
+export PATH=...
+```
+
+create `~/.zshenv`
+
 ## Setting
 
 - create and copy `~/.config/zsh`
