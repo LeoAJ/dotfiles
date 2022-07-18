@@ -76,8 +76,18 @@ local config = {
     -- Add plugins, the packer syntax without the "use"
     init = {
       -- You can disable default plugins as follows:
+      ["stevearc/aerial.nvim"] = { disable = true },
       ["neovim-session-manager"] = { disable = true },
       ["goolord/alpha-nvim"] = { disable = true },
+      {
+        "simrat39/rust-tools.nvim",
+        after = "nvim-lsp-installer",
+        config = function()
+          require("rust-tools").setup {
+            server = astronvim.lsp.server_settings "rust_analyzer",
+          }
+        end,
+      },
       {
         "jose-elias-alvarez/typescript.nvim",
         after = "nvim-lsp-installer",
@@ -137,6 +147,7 @@ local config = {
       ensure_installed = { 
         "bash",
         "comment",
+        "cpp",
         "dockerfile",
         "graphql",
         "html",
@@ -146,10 +157,12 @@ local config = {
         "json",
         "json5",
         "kotlin",
-        "lua", 
+        "lua",
         "make",
         "proto",
         "python",
+        "rust",
+        "toml",
         "tsx",
         "typescript",
         "sql",
@@ -158,7 +171,16 @@ local config = {
       },
     },
     ["nvim-lsp-installer"] = {
-      ensure_installed = { "sumneko_lua", "tsserver" },
+      ensure_installed = {
+        "sumneko_lua",
+        "sumneko_lua",
+        "tsserver",
+        "bashls",
+        "yamlls",
+        "pyright",
+        "rust_analyzer",
+        "taplo",
+      },
     },
     packer = {
       compile_path = vim.fn.stdpath "data" .. "/packer_compiled.lua",

@@ -99,7 +99,7 @@ live_config_reload: true
 #  args:
 #    - --login
 
-# Colors
+# Colors (nightfly)
 colors:
   # Default colors
   primary:
