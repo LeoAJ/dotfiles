@@ -52,9 +52,10 @@ alias np="npm"
 alias ca="cat"
 alias ba="bat"
 alias nn="nnn -de"
-alias sz="source ~/.zshrc"
+alias sz="source ~/.config/zsh/.zshrc"
 
 # config
+alias nc="nvim ~/.gitconfig"
 alias na="nvim ~/.config/alacritty/alacritty.yml"
 alias ni="nvim ~/.config/nvim/lua/user/init.lua"
 alias nt="nvim ~/.tmux.conf"

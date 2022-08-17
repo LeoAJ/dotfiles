@@ -1,3 +1,12 @@
+[interactive]
+  diffFilter = delta --color-only
+[delta]
+  features = side-by-side line-numbers decorations
+  whitespace-error-style = 22 reverse
+[delta "decorations"]
+  commit-decoration-style = bold yellow box ul
+  file-style = bold yellow ul
+  file-decoration-style = none
 [alias]
   # View abbreviated SHA, description, and history graph of the latest 20 commits.
 	l = log --pretty=oneline -n 20 --graph --abbrev-commit
@@ -64,8 +73,9 @@
 
 	# Show the user email for the current repository.
 	whoami = config user.email
+[core]
+	editor = vim
+	pager = delta
 [user]
 	email = leo0924@protonmail.com
 	name = Leo Hsieh
-[pager]
-	branch = false
