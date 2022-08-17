@@ -60,9 +60,9 @@ alias sz="source ~/.config/zsh/.zshrc"
 # config
 alias nc="nvim ~/.gitconfig"
 alias na="nvim ~/.config/alacritty/alacritty.yml"
-alias ni="nvim ~/.config/nvim/lua/user/init.lua"
+alias ni="nvim ~/.config/nvim/lua/leo/init.lua"
 alias nt="nvim ~/.tmux.conf"
-alias nz="nvim ~/.zshrc"
+alias nz="nvim ~/.config/zsh/.zshrc"
 alias nza="nvim ~/.config/zsh/aliases.zsh"
 
 alias \
