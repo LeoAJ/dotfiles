@@ -1,9 +1,16 @@
 # git
 alias g="git"
+
+# git alias
+alias gc="g c"
+alias gl="g l"
+alias gst="g s"
+alias gca="g ca"
+alias gpl="g p"
+alias ggo="g go"
+
+# git shortcut
 alias gf="g fetch"
-alias gc="g clone"
-alias gl="g log"
-alias gst="g status"
 alias gaa="g add ."
 alias gp="g push"
 alias ggp="gp origin"
@@ -12,12 +19,8 @@ alias ga="g add"
 alias gd="g diff"
 alias gcm='g commit -am'
 alias glp="gl --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%cr) %C(bold blue)<%an>%Creset'"
-alias glol="gl --oneline"
 alias gb="g branch"
 alias gm="g merge"
-alias gpl="g pull"
-alias gw="gh repo view --web"
-alias prs="gh pr list -l 'web risk needed'"
 alias gv="gh repo view --web"
 
 # docker
