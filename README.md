@@ -63,6 +63,7 @@ check fnm env setting [here](https://github.com/Schniz/fnm#zsh)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [z](https://github.com/rupa/z)
 - [bat](https://github.com/sharkdp/bat)
+- [delta](https://github.com/dandavison/delta)
 - yarn
 - tree
 - the_silver_searcher
