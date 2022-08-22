@@ -5,3 +5,4 @@ end
 
 require('leo.lsp.configs')
 require('leo.lsp.handlers').setup()
+require('rust-tools').inlay_hints.enable()
