@@ -12,6 +12,7 @@ null_ls.setup({
   debug = false,
   sources = {
     -- Set a formatter
+    formatting.rustfmt,
     formatting.prettier,
     -- formatting.stylua,
     -- Set a linter
