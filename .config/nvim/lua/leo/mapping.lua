@@ -1,5 +1,8 @@
 local nnoremap = require('leo.keymap').nnoremap
 local vnoremap = require('leo.keymap').vnoremap
+local xnoremap = require('leo.keymap').xnoremap
+
+xnoremap('<leader>p', '\"_dP')
 
 -- increment/decrement
 nnoremap('+', '<C-a>')
@@ -24,7 +27,31 @@ nnoremap('<leader>r', "<cmd>lua require('telescope.builtin').live_grep()<CR>")
 vnoremap('<', '<gv')
 vnoremap('>', '>gv')
 
+-- move selected line up or down
+vnoremap('J', ":m '>+1<CR>gv=gv")
+vnoremap('K', ":m '<-2<CR>gv=gv")
+
 -- terminal
 nnoremap('<C-\\>', '<cmd>ToggleTerm<cr>')
-nnoremap('<leader>h', '<cmd>ToggleTerm size=10 direction=horizontal<cr>')
-nnoremap('<leader>v', '<cmd>ToggleTerm size=80 direction=vertical<cr>')
+-- nnoremap('<leader>h', '<cmd>ToggleTerm size=10 direction=horizontal<cr>')
+-- nnoremap('<leader>v', '<cmd>ToggleTerm size=80 direction=vertical<cr>')
+
+-- ?
+nnoremap('Y', 'yg$')
+nnoremap('<C-d>', '<C-d>zz')
+nnoremap('<C-u>', '<C-u>zz')
+
+-- split
+nnoremap('<C-h>', '<C-w>h')
+nnoremap('<C-j>', '<C-w>j')
+nnoremap('<C-k>', '<C-w>k')
+nnoremap('<C-l>', '<C-w>l')
+
+-- resize split window
+nnoremap('<C-Up>', '<cmd>resize -2<CR>')
+nnoremap('<C-Down>', '<cmd>resize +2<CR>')
+nnoremap('<C-Left>', '<cmd>vertical resize -2<CR>')
+nnoremap('<C-Right>', '<cmd>vertical resize +2<CR>')
+
+-- join line below to current with one space in between
+nnoremap('J', 'mzJ`z')
