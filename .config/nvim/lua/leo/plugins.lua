@@ -1,113 +1,116 @@
 local status_ok, packer = pcall(require, "packer")
 if status_ok then
-  packer.startup {
-    function()
-    end,
-    config = {
-      compile_path = vim.fn.stdpath "data" .. "/packer_compiled.lua",
-      auto_clean = true,
-      compile_on_sync = true,
-      display = {
-        open_fn = function() return require("packer.util").float { border = "rounded" } end
-      }
-    }
-  }
+	packer.startup({
+		function() end,
+		config = {
+			compile_path = vim.fn.stdpath("data") .. "/packer_compiled.lua",
+			auto_clean = true,
+			compile_on_sync = true,
+			display = {
+				open_fn = function()
+					return require("packer.util").float({ border = "rounded" })
+				end,
+			},
+		},
+	})
 end
 
-return require('packer').startup(function(use)
-  -- Packer can manage itself
-  use 'wbthomason/packer.nvim'
-  use 'nvim-lua/plenary.nvim'
+return require("packer").startup(function(use)
+	-- Packer can manage itself
+	use("wbthomason/packer.nvim")
+	use("nvim-lua/plenary.nvim")
 
-  -- vim cool
-  use 'romainl/vim-cool'
+	-- essential plugins
+	use("tpope/vim-surround")
 
-  -- Optimiser
-  use 'lewis6991/impatient.nvim'
+	-- vim cool
+	use("romainl/vim-cool")
 
-  -- icons
-  use 'kyazdani42/nvim-web-devicons'
+	-- Optimiser
+	use("lewis6991/impatient.nvim")
 
-  -- Indent detection
-  -- use 'Darazaki/indent-o-matic'
+	-- icons
+	use("kyazdani42/nvim-web-devicons")
 
-  -- Parenthesis highlighting
-  use 'p00f/nvim-ts-rainbow'
+	-- Indent detection
+	-- use 'Darazaki/indent-o-matic'
 
-  -- Autoclose tags
-  use 'windwp/nvim-ts-autotag'
+	-- Parenthesis highlighting
+	use("p00f/nvim-ts-rainbow")
 
-  -- Autopairs
-  use 'windwp/nvim-autopairs'
+	-- Autoclose tags
+	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" })
 
-  -- Notification Enhancer
-  use 'rcarriga/nvim-notify'
+	-- Autopairs
+	use("windwp/nvim-autopairs")
 
-  -- Neovim UI Enhancer
-  use 'stevearc/dressing.nvim'
+	-- Notification Enhancer
+	use("rcarriga/nvim-notify")
 
-  -- Cursorhold fix
-  use {
-    'antoinemadec/FixCursorHold.nvim',
-    config = function()
-      vim.g.cursorhold_updatetime = 100
-    end
-  }
+	-- Neovim UI Enhancer
+	use("stevearc/dressing.nvim")
 
-  -- theme
-  use 'bluz71/vim-nightfly-guicolors'
+	-- Cursorhold fix
+	use({
+		"antoinemadec/FixCursorHold.nvim",
+		config = function()
+			vim.g.cursorhold_updatetime = 100
+		end,
+	})
 
-  -- comment
-  use 'numToStr/Comment.nvim'
+	-- theme
+	use("bluz71/vim-nightfly-guicolors")
 
-  -- LSP
-  -- use 'williamboman/nvim-lsp-installer'
-  use 'neovim/nvim-lspconfig'
-  use 'jose-elias-alvarez/null-ls.nvim'
-  use 'onsails/lspkind-nvim'
+	-- comment
+	use("numToStr/Comment.nvim")
 
-  -- cmp
-  use 'hrsh7th/nvim-cmp'
-  use 'hrsh7th/cmp-buffer'
-  use 'hrsh7th/cmp-path'
-  use 'hrsh7th/cmp-nvim-lsp'
-  use 'saadparwaiz1/cmp_luasnip'
+	-- LSP
+	use("neovim/nvim-lspconfig")
+	use("hrsh7th/cmp-nvim-lsp")
+	use({ "glepnir/lspsaga.nvim", branch = "main" })
+	use("onsails/lspkind-nvim")
 
-  -- tree sitter
-  use {'nvim-treesitter/nvim-treesitter', run = ":TSUpdate"}
-  use 'nvim-treesitter/nvim-treesitter-context'
-  use 'JoosepAlviste/nvim-ts-context-commentstring'
+	-- cmp
+	use("hrsh7th/nvim-cmp")
+	use("hrsh7th/cmp-buffer")
+	use("hrsh7th/cmp-path")
 
-  -- snippets
-  use 'L3MON4D3/LuaSnip'
+	-- tree sitter
+	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use("nvim-treesitter/nvim-treesitter-context")
+	use("JoosepAlviste/nvim-ts-context-commentstring")
 
-  -- fuzzy finder
-  use 'nvim-telescope/telescope.nvim'
-  use {'nvim-telescope/telescope-fzf-native.nvim', run = 'make' }
+	-- snippets
+	use("L3MON4D3/LuaSnip")
+	use("saadparwaiz1/cmp_luasnip")
+	use("rafamadriz/friendly-snippets")
 
-  -- bufferline
-  use {'akinsho/bufferline.nvim', tag = "v2.*", requires = 'kyazdani42/nvim-web-devicons'}
+	-- mason
+	use("williamboman/mason.nvim")
+	use("williamboman/mason-lspconfig.nvim")
 
-  -- snippets
-  use "rafamadriz/friendly-snippets"
+	-- fuzzy finder
+	use("nvim-telescope/telescope.nvim")
+	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" })
 
-  use 'lewis6991/gitsigns.nvim'
+	-- formatting & linting
+	use("jose-elias-alvarez/null-ls.nvim")
+	use("jayp0521/mason-null-ls.nvim")
 
-  use 'max397574/better-escape.nvim'
+	-- bufferline
+	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
 
-  use 'lukas-reineke/indent-blankline.nvim'
+	use("lewis6991/gitsigns.nvim")
 
-  use 'akinsho/toggleterm.nvim'
+	use("max397574/better-escape.nvim")
 
-  use 'feline-nvim/feline.nvim'
+	use("lukas-reineke/indent-blankline.nvim")
 
-  -- rust
-  use 'simrat39/rust-tools.nvim'
+	use("akinsho/toggleterm.nvim")
 
-  -- mason
-  use 'williamboman/mason.nvim'
-  use 'williamboman/mason-lspconfig.nvim'
+	-- use 'feline-nvim/feline.nvim'
+	use("nvim-lualine/lualine.nvim")
 
-  -- Get extra JSON schemas
-  -- use 'b0o/SchemaStore.nvim'
+	-- rust
+	use("simrat39/rust-tools.nvim")
 end)
