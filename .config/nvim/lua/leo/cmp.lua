@@ -1,34 +1,10 @@
 local cmp_status_ok, cmp = pcall(require, "cmp")
 local snip_status_ok, luasnip = pcall(require, "luasnip")
-if not (cmp_status_ok and snip_status_ok) then return end
+local lspkind_status_ok, lspkind = pcall(require, "lspkind")
+if not (cmp_status_ok and snip_status_ok and lspkind_status_ok) then return end
 
-local kind_icons = {
-  Text = "",
-  Method = "",
-  Function = "",
-  Constructor = "",
-  Field = "ﰠ",
-  Variable = "",
-  Class = "",
-  Interface = "",
-  Module = "",
-  Property = "",
-  Unit = "",
-  Value = "",
-  Enum = "",
-  Keyword = "",
-  Snippet = "",
-  Color = "",
-  File = "",
-  Reference = "",
-  Folder = "",
-  EnumMember = "",
-  Constant = "",
-  Struct = "פּ",
-  Event = "",
-  Operator = "",
-  TypeParameter = "",
-}
+local border_opts =
+  { border = "single", winhighlight = "Normal:Normal,FloatBorder:FloatBorder,CursorLine:Visual,Search:None" }
 
 local function has_words_before()
   local line, col = unpack(vim.api.nvim_win_get_cursor(0))
@@ -39,16 +15,28 @@ cmp.setup {
   preselect = cmp.PreselectMode.None,
   formatting = {
     fields = { "kind", "abbr", "menu" },
-    format = function(entry , vim_item)
-      vim_item.kind = string.format("%s", kind_icons[vim_item.kind])
-      vim_item.menu = ({
-        nvim_lsp = "[LSP]",
-        luasnip = "[Snippet]",
-        buffer = "[Buffer]",
-        path = "[Path]",
-      })[entry.source.name]
-      return vim_item
-    end,
+    format = lspkind.cmp_format({
+      mode = "symbol",
+      symbol_map = {
+        NONE = "",
+        Array = "",
+        Boolean = "⊨",
+        Class = "",
+        Constructor = "",
+        Key = "",
+        Namespace = "",
+        Null = "NULL",
+        Number = "#",
+        Object = "⦿",
+        Package = "",
+        Property = "",
+        Reference = "",
+        Snippet = "",
+        String = "𝓐",
+        TypeParameter = "",
+        Unit = "",
+      },
+    })
   },
   snippet = {
     expand = function(args) luasnip.lsp_expand(args.body) end,
@@ -64,9 +52,8 @@ cmp.setup {
     select = false,
   },
   window = {
-    documentation = {
-      border = { "╭", "─", "╮", "│", "╯", "─", "╰", "│" },
-    },
+    completion = cmp.config.window.bordered(border_opts),
+    documentation = cmp.config.window.bordered(border_opts),
   },
   mapping = {
     ["<Up>"] = cmp.mapping.select_prev_item(),
