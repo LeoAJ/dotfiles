@@ -17,7 +17,7 @@ require("leo.bufferline")
 require("leo.gitsigns")
 require("leo.better_escape")
 require("leo.indent-line")
--- require("leo.toggleterm")
+require("leo.toggleterm")
 require("leo.lualine")
 
 -- theme
