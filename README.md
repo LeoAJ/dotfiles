@@ -59,6 +59,7 @@ use `brew` to install these tools
 - [z](https://github.com/rupa/z)
 - [bat](https://github.com/sharkdp/bat)
 - [delta](https://github.com/dandavison/delta)
+- [s](https://github.com/zquestz/s)
 - yarn
 - tree
 - the_silver_searcher
