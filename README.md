@@ -11,10 +11,10 @@ echo $PATH
 
 ```
 
-copy value and paste in `.config/zsh/.zshrc`
+copy that value and paste in `.config/zsh/.zshrc`
 
 ```bash
-export PATH=...
+export PATH=YOUR_VALUE
 ```
 
 create `~/.zshenv`
@@ -41,22 +41,17 @@ https://github.com/eendroroy/alacritty-theme
 brew install neovim
 ```
 
-#### AstroNvim
-
-https://github.com/AstroNvim/AstroNvim
-
-#### Without AstroNvim
+#### setup
 
 copy `nvim` folder to `~/.config/nvim`
 
-install [packer](https://github.com/wbthomason/packer.nvim) to install plugins
+use [packer](https://github.com/wbthomason/packer.nvim) to install plugins
 
-## Node
+## Tools
 
-check fnm env setting [here](https://github.com/Schniz/fnm#zsh)
+use `brew` to install these tools
 
-## Brew
-
+- [fnm](https://github.com/Schniz/fnm)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
@@ -77,6 +72,10 @@ check fnm env setting [here](https://github.com/Schniz/fnm#zsh)
 - k8s
 - [tldr](https://github.com/tldr-pages/tldr)
 
+## Node
+
+check fnm env setting [here](https://github.com/Schniz/fnm#zsh)
+
 ## Bat
 
 generate `bat` config file
@@ -85,7 +84,7 @@ generate `bat` config file
 bat --generate-config-file
 ```
 
-## Links
+## Reference
 
 - [craftzdog](https://github.com/craftzdog/dotfiles-public)
 - [LunarVim](https://github.com/ChristianChiarulli/LunarVim)
