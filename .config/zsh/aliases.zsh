@@ -39,8 +39,8 @@ alias cg="cargo"
 alias y="yarn"
 
 # others
-alias f="google"
-alias s="cd .."
+alias .="cd .."
+alias f="s -p google"
 alias c="clear"
 alias h="history"
 alias tr="tree -C"
@@ -54,7 +54,6 @@ alias e="exit"
 alias np="npm"
 alias ca="cat"
 alias ba="bat"
-alias nn="nnn -de"
 alias sz="source ~/.config/zsh/.zshrc"
 
 # config
