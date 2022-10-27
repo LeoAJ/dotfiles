@@ -8,7 +8,7 @@ precmd() { vcs_info }
 
 setopt PROMPT_SUBST
 # zstyle ':vcs_info:*' check-for-changes true
-zstyle ':vcs_info:git:*' formats " %{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
+zstyle ':vcs_info:git:*' formats "%{$fg[blue]%}(%{$fg[red]%}%m%u%c%{$fg[yellow]%}%{$fg[magenta]%} %b%{$fg[blue]%})"
 # 
 # PROMPT="%B%{$fg[red]%}[%{$fg[yellow]%}%n%{$fg[green]%}@%{$fg[blue]%}%\me %{$fg[magenta]%}%c%{$fg[red]%}]%{$reset_color%} ➜%b "
 PROMPT="🖥  %{$fg[magenta]%}%c%{$fg[red]%}%{$reset_color%} ➜%b "
