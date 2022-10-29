@@ -108,6 +108,9 @@ return require("packer").startup(function(use)
 
 	use("akinsho/toggleterm.nvim")
 
+	-- tmux
+	use("christoomey/vim-tmux-navigator")
+
 	-- use 'feline-nvim/feline.nvim'
 	use("nvim-lualine/lualine.nvim")
 
