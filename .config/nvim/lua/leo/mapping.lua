@@ -32,9 +32,7 @@ vnoremap('J', ":m '>+1<CR>gv=gv")
 vnoremap('K', ":m '<-2<CR>gv=gv")
 
 -- terminal
-nnoremap('<C-\\>', '<cmd>ToggleTerm<cr>')
--- nnoremap('<leader>h', '<cmd>ToggleTerm size=10 direction=horizontal<cr>')
--- nnoremap('<leader>v', '<cmd>ToggleTerm size=80 direction=vertical<cr>')
+nnoremap('<leader>t', '<cmd>ToggleTerm<cr>')
 
 -- ?
 nnoremap('Y', 'yg$')
