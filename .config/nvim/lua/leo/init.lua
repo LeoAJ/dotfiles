@@ -19,6 +19,3 @@ require("leo.better_escape")
 require("leo.indent-line")
 require("leo.toggleterm")
 require("leo.lualine")
-
--- theme
-vim.cmd("colorscheme nightfly")
