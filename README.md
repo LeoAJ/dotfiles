@@ -69,9 +69,10 @@ use `brew` to install these tools
 
 ## Others
 
+- [trash-cli](https://github.com/sindresorhus/trash-cli)
+- [tldr](https://github.com/tldr-pages/tldr)
 - docker
 - k8s
-- [tldr](https://github.com/tldr-pages/tldr)
 
 ## Node
 
