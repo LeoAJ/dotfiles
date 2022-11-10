@@ -1,6 +1,7 @@
 -- theme
 vim.opt.termguicolors = true -- Enable 24-bit RGB color in the TUI
 vim.cmd.colorscheme("nightfly")
+vim.g.nightflyTransparent = true
 vim.opt.background = "dark"
 
 -- setting

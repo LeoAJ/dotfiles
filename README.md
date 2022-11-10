@@ -60,12 +60,12 @@ use `brew` to install these tools
 - [bat](https://github.com/sharkdp/bat)
 - [delta](https://github.com/dandavison/delta)
 - [s](https://github.com/zquestz/s)
+- [fd](https://github.com/sharkdp/fd)
+- [ripgrep](https://github.com/BurntSushi/ripgrep)
 - yarn
 - tree
 - the_silver_searcher
-- fd
 - fzf
-- ripgrep
 
 ## Others
 
