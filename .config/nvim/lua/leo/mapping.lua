@@ -54,3 +54,7 @@ nnoremap("<C-Right>", "<cmd>vertical resize +2<CR>")
 
 -- join line below to current with one space in between
 nnoremap("J", "mzJ`z")
+
+-- Center with n/N
+nnoremap("n", "nzzzv")
+nnoremap("N", "Nzzzv")
