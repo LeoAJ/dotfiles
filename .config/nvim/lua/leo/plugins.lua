@@ -59,7 +59,16 @@ return require("packer").startup(function(use)
 	})
 
 	-- theme
-	use("bluz71/vim-nightfly-guicolors")
+	-- use("bluz71/vim-nightfly-guicolors")
+	-- use("jacoborus/tender.vim")
+	-- use("RRethy/nvim-base16")
+	use({
+		"rose-pine/neovim",
+		as = "rose-pine",
+		config = function()
+			vim.cmd("colorscheme rose-pine")
+		end,
+	})
 
 	-- comment
 	use("numToStr/Comment.nvim")
@@ -76,7 +85,7 @@ return require("packer").startup(function(use)
 	use("hrsh7th/cmp-path")
 
 	-- tree sitter
-	use({ "nvim-treesitter/nvim-treesitter", run = ":TSUpdate" })
+	use("nvim-treesitter/nvim-treesitter", { run = ":TSUpdate" })
 	use("nvim-treesitter/nvim-treesitter-context")
 	use("JoosepAlviste/nvim-ts-context-commentstring")
 
@@ -98,7 +107,7 @@ return require("packer").startup(function(use)
 	use("jayp0521/mason-null-ls.nvim")
 
 	-- bufferline
-	use({ "akinsho/bufferline.nvim", tag = "v2.*", requires = "kyazdani42/nvim-web-devicons" })
+	use({ "akinsho/bufferline.nvim", tag = "v3.*", requires = "kyazdani42/nvim-web-devicons" })
 
 	use("lewis6991/gitsigns.nvim")
 
