@@ -1,37 +1,15 @@
 local status_ok, telescope = pcall(require, "telescope")
-if not status_ok then return end
-local actions = require "telescope.actions"
+if not status_ok then
+	return
+end
+local builtin = require("telescope.builtin")
 
-telescope.load_extension('notify')
-telescope.load_extension('fzf')
+telescope.load_extension("notify")
+telescope.load_extension("fzf")
 
-telescope.setup {
-  defaults = {
-    prompt_prefix = " ",
-    selection_caret = "❯ ",
-    path_display = { "truncate" },
-    sorting_strategy = "ascending",
-    layout_config = {
-      horizontal = {
-        prompt_position = "top",
-        preview_width = 0.55,
-        results_width = 0.8,
-      },
-      vertical = {
-        mirror = false,
-      },
-      width = 0.87,
-      height = 0.80,
-      preview_cutoff = 120,
-    }
-  },
-  mappings = {
-    i = {
-      ["<C-n>"] = actions.cycle_history_next,
-      ["<C-p>"] = actions.cycle_history_prev,
-      ["<C-j>"] = actions.move_selection_next,
-      ["<C-k>"] = actions.move_selection_previous,
-    },
-    n = { ["q"] = actions.close },
-  },
-}
+-- telescope
+vim.keymap.set("n", "<leader>f", builtin.find_files, {})
+vim.keymap.set("n", "<leader>F", function()
+	builtin.find_files({ hidden = true, no_ignore = true })
+end)
+vim.keymap.set("n", "<leader>r", builtin.live_grep, {})
