@@ -1,60 +1,36 @@
-local nnoremap = require("leo.keymap").nnoremap
-local vnoremap = require("leo.keymap").vnoremap
-local xnoremap = require("leo.keymap").xnoremap
-
-xnoremap("<leader>p", '"_dP')
+-- continue copy paste
+vim.keymap.set("x", "<leader>p", '"_dP')
 
 -- increment/decrement
-nnoremap("+", "<C-a>")
-nnoremap("-", "<C-x>")
+vim.keymap.set("n", "+", "<C-a>")
+vim.keymap.set("n", "-", "<C-x>")
 
 -- close buffer
-nnoremap("<leader>d", "<cmd>bdelete<cr>")
-
--- switch tab
-nnoremap("<Tab>", "<cmd>BufferLineCycleNext<cr>")
-nnoremap("<S-Tab>", "<cmd>BufferLineCyclePrev<cr>")
+vim.keymap.set("n", "<leader>d", "<cmd>bdelete<cr>")
 
 -- netrw
-nnoremap("<leader>e", "<cmd>:Ex<CR>")
-
--- telescope
-nnoremap("<leader>f", "<cmd>lua require('telescope.builtin').find_files()<CR>")
-nnoremap("<leader>F", "<cmd>lua require('telescope.builtin').find_files { hidden = true, no_ignore = true }<CR>")
-nnoremap("<leader>r", "<cmd>lua require('telescope.builtin').live_grep()<CR>")
+vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 -- stay in indent mode
-vnoremap("<", "<gv")
-vnoremap(">", ">gv")
+vim.keymap.set("v", "<", "<gv")
+vim.keymap.set("v", ">", ">gv")
 
 -- move selected line up or down
-vnoremap("J", ":m '>+1<CR>gv=gv")
-vnoremap("K", ":m '<-2<CR>gv=gv")
-
--- terminal
-nnoremap("<leader>t", "<cmd>ToggleTerm<cr>")
-
--- ?
-nnoremap("Y", "yg$")
--- jump paragraph and center cursor
-nnoremap("<C-d>", "<C-d>zz")
-nnoremap("<C-u>", "<C-u>zz")
-
--- split
-nnoremap("<C-h>", "<C-w>h")
-nnoremap("<C-j>", "<C-w>j")
-nnoremap("<C-k>", "<C-w>k")
-nnoremap("<C-l>", "<C-w>l")
-
--- resize split window
-nnoremap("<C-Up>", "<cmd>resize -2<CR>")
-nnoremap("<C-Down>", "<cmd>resize +2<CR>")
-nnoremap("<C-Left>", "<cmd>vertical resize -2<CR>")
-nnoremap("<C-Right>", "<cmd>vertical resize +2<CR>")
+vim.keymap.set("v", "J", ":m '>+1<CR>gv=gv")
+vim.keymap.set("v", "K", ":m '<-2<CR>gv=gv")
 
 -- join line below to current with one space in between
-nnoremap("J", "mzJ`z")
+vim.keymap.set("n", "J", "mzJ`z")
+
+-- center after page up & down
+vim.keymap.set("n", "<C-d>", "<C-d>zz")
+vim.keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- Center with n/N
-nnoremap("n", "nzzzv")
-nnoremap("N", "Nzzzv")
+vim.keymap.set("n", "n", "nzzzv")
+vim.keymap.set("n", "N", "Nzzzv")
+
+-- format
+vim.keymap.set("n", "<leader>g", function()
+	vim.lsp.buf.format()
+end)
