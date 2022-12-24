@@ -43,7 +43,7 @@ lsp.setup_nvim_cmp({ mapping = cmp_mappings })
 
 lsp.set_preferences({
   suggest_lsp_servers = false,
-  sign_icons = { error = "E", warn = "W", hint = "H", info = "I" }
+  sign_icons = { error = "✘", warn = "▲", hint = "⚑", info = "" }
 })
 
 lsp.on_attach(function(client, bufnr)
@@ -55,6 +55,7 @@ lsp.on_attach(function(client, bufnr)
   end
 
   vim.keymap.set("n", "gd", vim.lsp.buf.definition, opts)
+  -- vim.keymap.set("n", "gD", vim.lsp.buf., opts)
   vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
   -- ?
   vim.keymap.set("n", "<leader>vws", vim.lsp.buf.workspace_symbol, opts)
@@ -68,8 +69,6 @@ lsp.on_attach(function(client, bufnr)
   vim.keymap.set("n", "gi", vim.lsp.buf.implementation, opts)
   -- vim.keymap.set("n", "<leader>s", vim.lsp.buf.signature_help, opts)
 end)
-
-vim.diagnostic.config({ virtual_text = true })
 
 -- rust tools
 local rust_lsp = lsp.build_options("rust_analyzer", {})
@@ -120,3 +119,14 @@ null_ls.setup({
 
 lsp.setup()
 require('luasnip.loaders.from_snipmate').lazy_load()
+
+vim.diagnostic.config({
+  virtual_text = {
+    -- source = "always",  -- Or "if_many"
+    prefix = '●', -- Could be '■', '▎', 'x'
+  },
+  severity_sort = true,
+  float = {
+    source = "always", -- Or "if_many"
+  },
+})
