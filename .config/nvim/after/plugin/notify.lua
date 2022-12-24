@@ -4,7 +4,7 @@ if not status_ok then
 end
 
 notify.setup({
-	stages = "fade",
+	-- stages = "fade",
 	background_colour = "#000000",
 })
 
