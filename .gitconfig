@@ -79,3 +79,5 @@
 [user]
 	email = leo0924@protonmail.com
 	name = Leo Hsieh
+[mergetool]
+	keepBackup = false
