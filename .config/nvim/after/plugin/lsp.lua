@@ -6,9 +6,9 @@ if not (cmp_status_ok and lsp_status_ok and null_ls_status_ok) then return end
 
 lsp.preset("recommended")
 
-lsp.ensure_installed({ "tsserver", "eslint", "sumneko_lua", "rust_analyzer" })
+lsp.ensure_installed({ "tsserver", "eslint", "lua_ls", "rust_analyzer", "pyright" })
 
-lsp.configure("sumneko_lua",
+lsp.configure("lua_ls",
   { settings = { Lua = { diagnostics = { globals = { "vim" } } } } })
 
 -- local cmp_select = {behavior = cmp.SelectBehavior.Select}
@@ -85,7 +85,14 @@ local formatting = null_ls.builtins.formatting
 local augroup = vim.api.nvim_create_augroup("LspFormatting", {})
 
 local null_sources = {
-  formatting.rustfmt, formatting.prettier
+  formatting.prettier,
+  formatting.rustfmt
+  -- .with({
+  --   extra_args = function(params)
+  --     print(params)
+  --     return params.options and { "tab_spaces", 2 }
+  --   end
+  -- }),
   -- formatting.lua_format.with({
   --   extra_args = function(params)
   --     return params.options and params.options.tabSize and { "--indent-width", 2 }
