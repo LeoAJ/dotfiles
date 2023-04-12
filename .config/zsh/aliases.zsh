@@ -2,12 +2,11 @@
 alias g="git"
 
 # git alias
-alias gc="g c"
-alias gl="g l"
-alias gst="g s"
-alias gca="g ca"
-alias gpl="g p"
-alias ggo="g go"
+alias gc="g clone --recursive"
+alias gl="g log --pretty=oneline -n 20 --graph --abbrev-commit"
+alias gst="g status -s"
+alias gca="g add -A && git commit -av"
+alias gpl="g pull --recurse-submodules"
 
 # git shortcut
 alias gf="g fetch"
