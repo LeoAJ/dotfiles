@@ -2,6 +2,12 @@
 
 My dotfiles config
 
+## Install
+
+```
+./scripts/bootstrap.sh
+```
+
 ## Zsh
 
 do
