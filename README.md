@@ -47,12 +47,6 @@ https://github.com/eendroroy/alacritty-theme
 brew install neovim
 ```
 
-#### setup
-
-copy `nvim` folder to `~/.config/nvim`
-
-use [packer](https://github.com/wbthomason/packer.nvim) to install plugins
-
 ## Tools
 
 use `brew` to install these tools
