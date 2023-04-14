@@ -52,6 +52,7 @@ brew install neovim
 use `brew` to install these tools
 
 - [fnm](https://github.com/Schniz/fnm)
+- [zsh-autopair](https://github.com/hlissner/zsh-autopair)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
