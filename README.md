@@ -10,24 +10,11 @@ My dotfiles config
 
 ## Zsh
 
-do
-
-```bash
-echo $PATH
-
+```
+brew install zsh
 ```
 
-copy that value and paste in `.config/zsh/.zshrc`
-
-```bash
-export PATH=YOUR_VALUE
-```
-
-create `~/.zshenv`
-
-## Setting
-
-- create and copy `~/.config/zsh`
+create and copy `~/.zshenv`
 
 ## Alacritty
 
