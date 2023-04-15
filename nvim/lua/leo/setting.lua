@@ -56,3 +56,11 @@ vim.cmd([[
     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
   augroup END
 ]])
+
+-- reset cursor style for terminal after exit nvim
+vim.cmd([[
+  augroup shape
+    autocmd!
+    au VimLeave,VimSuspend * set guicursor=a:ver10
+  augroup END
+]])

@@ -21,7 +21,4 @@ autoload -Uz compinit && compinit
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
-# source aliases everytime with new prompt
-# precmd() {
-#   source $DOTFILES/zsh/aliases.zsh
-# }
+if [ "$TMUX" = "" ]; then tmux; fi
