@@ -1,3 +1,4 @@
+eval "$(starship init zsh)"
 eval "$(fnm env)"
 
 export CLICOLOR=1
