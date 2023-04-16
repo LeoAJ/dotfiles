@@ -50,6 +50,9 @@ use `brew` to install these tools
 - [s](https://github.com/zquestz/s)
 - [fd](https://github.com/sharkdp/fd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
+- [MonitorControl](https://github.com/MonitorControl/MonitorControl)
+- [Maccy](https://github.com/p0deje/Maccy)
+- [DevToysMac](https://github.com/ObuchiYuki/DevToysMac)
 - yarn
 - tree
 - the_silver_searcher
