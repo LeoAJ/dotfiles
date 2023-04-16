@@ -9,9 +9,9 @@ source_if_exists $DOTFILES/zsh/aliases.zsh
 source_if_exists $DOTFILES/zsh/exports.zsh
 source_if_exists $DOTFILES/zsh/plugins.zsh
 
-if type "direnv" > /dev/null; then
-  eval "$(direnv hook zsh)"
-fi
+# if type "direnv" > /dev/null; then
+#   eval "$(direnv hook zsh)"
+# fi
 
 autoload -U zmv
 autoload -U promptinit && promptinit
