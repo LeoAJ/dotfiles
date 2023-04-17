@@ -8,35 +8,9 @@ My dotfiles config
 ./scripts/bootstrap.sh
 ```
 
-## Zsh
-
-```
-brew install zsh
-```
-
-create and copy `~/.zshenv`
-
-## Alacritty
-
-```
-brew install --cask alacritty
-```
-
-copy `alacritty` folder to `~/.config/alacritty`
-
-#### Theme
-
-https://github.com/eendroroy/alacritty-theme
-
-## Neovim
-
-```
-brew install neovim
-```
-
 ## Tools
 
-use `brew` to install these tools
+Those tool will be installed by brew
 
 - [fnm](https://github.com/Schniz/fnm)
 - [zsh-autopair](https://github.com/hlissner/zsh-autopair)
