@@ -20,8 +20,6 @@ require("lazy").setup({
 
   "lewis6991/impatient.nvim",
 
-  -- "kyazdani42/nvim-web-devicons",
-
   "p00f/nvim-ts-rainbow",
 
   { "windwp/nvim-ts-autotag", priority = 200 },
@@ -39,11 +37,19 @@ require("lazy").setup({
 		end
   },
 
+  -- {
+  --   'rose-pine/neovim',
+  --   name = 'rose-pine',
+  --   config = function()
+		-- 	vim.cmd("colorscheme rose-pine")
+		-- end,
+  --   priority = 1000
+  -- },
+
   {
-    'rose-pine/neovim',
-    name = 'rose-pine',
+    "catppuccin/nvim", name = "catppuccin",
     config = function()
-			vim.cmd("colorscheme rose-pine")
+			vim.cmd("colorscheme catppuccin-mocha")
 		end,
     priority = 1000
   },
