@@ -2,6 +2,16 @@
 
 My dotfiles config
 
+## Brew
+
+install [brew](https://brew.sh) first
+
+to update `Brewfile`
+
+```
+brew bundle dump --describe
+```
+
 ## Install
 
 ```
