@@ -20,7 +20,7 @@ brew bundle dump --describe
 
 ## Tools
 
-Those tool will be installed by brew
+Those tools will be installed by brew
 
 - [fnm](https://github.com/Schniz/fnm)
 - [zsh-autopair](https://github.com/hlissner/zsh-autopair)
