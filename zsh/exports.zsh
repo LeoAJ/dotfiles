@@ -6,7 +6,7 @@ export MANPAGER='nvim +Man!'
 export MANWIDTH=999
 export LC_CTYPE="UTF-8"
 
-export PATH=/Users/leo/.cargo/bin:/Users/leo/Library/Caches/fnm_multishells/53672_1658122252725/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/sbin
+# export PATH=/Users/leo/.cargo/bin:/Users/leo/Library/Caches/fnm_multishells/53672_1658122252725/bin:/opt/homebrew/bin:/opt/homebrew/sbin:/usr/local/bin:/usr/bin:/bin:/usr/sbin:/sbin:/Library/Apple/usr/bin:/opt/homebrew/bin:/opt/homebrew/sbin
 
 # Enable ls colors
 export LSCOLORS="Gxfxcxdxbxegedabagacad"
