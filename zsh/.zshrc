@@ -4,11 +4,9 @@ source_if_exists () {
   fi
 }
 
-export DOTFILES=/Users/leo/code/dotfiles
-
-source_if_exists $DOTFILES/zsh/aliases.zsh
-source_if_exists $DOTFILES/zsh/exports.zsh
-source_if_exists $DOTFILES/zsh/plugins.zsh
+source_if_exists $HOME/.config/zsh/aliases.zsh
+source_if_exists $HOME/.config/zsh/exports.zsh
+source_if_exists $HOME/.config/zsh/plugins.zsh
 
 autoload -U zmv
 autoload -U promptinit && promptinit
