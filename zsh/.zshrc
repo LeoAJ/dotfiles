@@ -1,3 +1,5 @@
+eval "$(/opt/homebrew/bin/brew shellenv)"
+
 source_if_exists () {
   if test -r "$1"; then
       source "$1"

@@ -1,5 +1,6 @@
-eval "$(starship init zsh)"
 eval "$(fnm env)"
+eval "$(starship init zsh)"
+eval "$(zoxide init zsh)"
 
 export CLICOLOR=1
 export MANPAGER='nvim +Man!'

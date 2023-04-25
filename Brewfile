@@ -62,8 +62,8 @@ brew "tokei"
 brew "tree"
 # JavaScript package manager
 brew "yarn"
-# Tracks most-used directories to make cd smarter
-brew "z"
+# Shell extension to navigate your filesystem faster
+brew "zoxide"
 # UNIX shell (command interpreter)
 brew "zsh"
 # Fish-like fast/unobtrusive autosuggestions for zsh
