@@ -37,6 +37,7 @@ Those tools will be installed by brew
 - [MonitorControl](https://github.com/MonitorControl/MonitorControl)
 - [Maccy](https://github.com/p0deje/Maccy)
 - [DevToysMac](https://github.com/ObuchiYuki/DevToysMac)
+- [zoxide](https://github.com/ajeetdsouza/zoxide)
 - yarn
 - tree
 - the_silver_searcher

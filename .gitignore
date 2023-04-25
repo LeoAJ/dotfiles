@@ -1,3 +1,5 @@
 Brewfile.lock.json
 packer_compiled.lua
 .DS_Store
+
+zsh/work.zsh
