@@ -28,7 +28,6 @@ Those tools will be installed by brew
 - [zsh-syntax-highlighting](https://github.com/zsh-users/zsh-syntax-highlighting)
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
-- [z](https://github.com/rupa/z)
 - [bat](https://github.com/sharkdp/bat)
 - [delta](https://github.com/dandavison/delta)
 - [s](https://github.com/zquestz/s)
@@ -42,6 +41,7 @@ Those tools will be installed by brew
 - tree
 - the_silver_searcher
 - fzf
+- [z (deprecated)](https://github.com/rupa/z)
 
 ## Others
 
