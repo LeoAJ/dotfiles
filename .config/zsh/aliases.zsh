@@ -67,5 +67,3 @@ alias \
 	cp="cp -iv" \
 	mv="mv -iv" \
 	mkd="mkdir -pv"
-
-alias luamake=/Users/leo/Documents/code/lua-language-server/3rd/luamake/compile/luamake
