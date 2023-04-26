@@ -9,6 +9,7 @@ source_if_exists () {
 source_if_exists $HOME/.config/zsh/aliases.zsh
 source_if_exists $HOME/.config/zsh/exports.zsh
 source_if_exists $HOME/.config/zsh/plugins.zsh
+source_if_exists $HOME/.config/zsh/work.zsh
 
 autoload -U zmv
 autoload -U promptinit && promptinit
