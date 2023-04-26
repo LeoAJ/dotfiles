@@ -1,6 +1,7 @@
 Brewfile.lock.json
 packer_compiled.lua
-.DS_Store
-
+lazy-lock.json
 zsh/work.zsh
 .zsh_plugins.zsh
+.zcompdump
+.DS_Store
