@@ -2,8 +2,8 @@ tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
 tap "homebrew/core"
-# Shell plugin manager
-brew "antibody"
+# Plugin manager for zsh, inspired by antigen and antibody
+brew "antidote"
 # Clone of cat(1) with syntax highlighting and Git integration
 brew "bat"
 # Cross-platform make
