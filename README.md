@@ -15,7 +15,7 @@ brew bundle dump --describe
 ## Install
 
 ```
-./scripts/bootstrap.sh
+./install.sh
 ```
 
 ## Tools
