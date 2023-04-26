@@ -1,0 +1,6 @@
+\.git
+.gitignore
+.zsh_plugins.txt
+install.sh
+Brewfile
+README.md
