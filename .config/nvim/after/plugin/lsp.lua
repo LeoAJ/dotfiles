@@ -11,6 +11,11 @@ lsp.setup_servers({ "tsserver", "eslint", "lua_ls", "rust_analyzer", "pyright" }
 -- (Optional) Configure lua language server for neovim
 require('lspconfig').lua_ls.setup(lsp.nvim_lua_ls())
 
+lsp.on_attach(function(client, bufnr)
+  lsp.default_keymaps({buffer = bufnr})
+  lsp.buffer_autoformat()
+end)
+
 lsp.setup()
 
 local rust_tools = require('rust-tools')
