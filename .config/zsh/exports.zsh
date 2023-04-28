@@ -2,6 +2,8 @@ eval "$(fnm env)"
 eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
+export PATH="$HOME/.cargo/bin:$PATH"
+
 export CLICOLOR=1
 export MANPAGER='nvim +Man!'
 export MANWIDTH=999
