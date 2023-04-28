@@ -10,8 +10,12 @@
 [core]
 	editor = vim
 	pager = delta
+  fsmonitor = true
+  untrackedCache = true
 [user]
 	email = leo0924@protonmail.com
 	name = Leo Hsieh
 [mergetool]
 	keepBackup = false
+[feature]
+  manyFiles = true
