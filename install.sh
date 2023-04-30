@@ -3,8 +3,11 @@
 # install brew
 /bin/bash -c "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/HEAD/install.sh)"
 
-# create zsh plugins
-antibody bundle < .zsh_plugins.txt > .zsh_plugins.sh
+# install brew bundle
+brew bundle install
 
 # symlink
 stow .
+
+# create zsh plugins
+antidote bundle < .zsh_plugins.txt > .zsh_plugins.sh

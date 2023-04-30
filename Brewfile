@@ -1,3 +1,4 @@
+tap "epk/epk"
 tap "homebrew/bundle"
 tap "homebrew/cask"
 tap "homebrew/cask-fonts"
@@ -46,6 +47,8 @@ brew "pcre2"
 brew "pnpm"
 # Modern replacement for ps written by Rust
 brew "procs"
+# Reattach process (e.g., tmux) to background
+brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Web search from the terminal
@@ -78,6 +81,7 @@ cask "alacritty"
 cask "devtoys"
 # Apple's SF Mono font patched with the Nerd Fonts patcher for Powerline support
 cask "font-sf-mono-for-powerline"
+cask "font-sf-mono-nerd-font"
 # Clipboard manager
 cask "maccy"
 # Tool to control external monitor brightness & volume

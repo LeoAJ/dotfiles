@@ -27,20 +27,23 @@ scrolling:
   history: 10000
 
   # Scrolling distance multiplier.
-  multiplier: 3
+  multiplier:
+    3
 
+    # SF Mono Powerline
+    # JetBrainsMono Nerd Font
 # Font configuration
 # Cascadia Code
 # Hack Nerd Font
 font:
   normal:
-    family: SF Mono Powerline
+    family: SFMono Nerd Font
     style: Regular
   bold:
-    family: SF Mono Powerline
+    family: SFMono Nerd Font
     style: Bold
   italic:
-    family: SF Mono Powerline
+    family: SFMono Nerd Font
     style: Italic
   # bold_italic:
   #   family: Hack Nerd Font
