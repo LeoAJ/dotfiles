@@ -1,6 +1,8 @@
 \.git
+.gitconfig
 .gitignore
 .zsh_plugins.txt
 install.sh
 Brewfile
+Brewfile.lock.json
 README.md
