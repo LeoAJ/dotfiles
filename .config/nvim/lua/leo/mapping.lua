@@ -8,6 +8,9 @@ vim.keymap.set("n", "-", "<C-x>")
 -- close buffer
 vim.keymap.set("n", "<leader>d", "<cmd>bdelete<cr>")
 
+-- terminal
+-- vim.keymap.set("n", "<leader>t", "<cmd>bdelete<cr>")
+
 -- netrw
 vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
@@ -31,6 +34,6 @@ vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
 -- format
-vim.keymap.set("n", "<leader>g", function()
-	vim.lsp.buf.format()
-end)
+-- vim.keymap.set("n", "<leader>g", function()
+-- 	vim.lsp.buf.format()
+-- end)

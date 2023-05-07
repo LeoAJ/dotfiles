@@ -109,5 +109,7 @@ require("lazy").setup({
 
   "nvim-lualine/lualine.nvim",
 
-  "simrat39/rust-tools.nvim"
+  "simrat39/rust-tools.nvim",
+
+  "NvChad/nvterm"
 })

@@ -1,0 +1,7 @@
+-- local status_ok, nvterm = pcall(require, "nvterm")
+-- if not status_ok then return end
+--
+-- nvterm.setup {
+-- }
+--
+-- vim.keymap.set("n", "<leader>t", "<cmd>lua require('nvterm.terminal').toggle 'float'<cr>")
