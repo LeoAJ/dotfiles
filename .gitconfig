@@ -12,10 +12,12 @@
 	pager = delta
   fsmonitor = true
   untrackedCache = true
-[user]
-	email = leo0924@protonmail.com
-	name = Leo Hsieh
 [mergetool]
 	keepBackup = false
 [feature]
   manyFiles = true
+[push]
+  default = current
+[user]
+	email = leo0924@protonmail.com
+	name = Leo Hsieh
