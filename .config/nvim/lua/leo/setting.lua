@@ -1,8 +1,5 @@
 -- theme
 vim.opt.termguicolors = true -- Enable 24-bit RGB color in the TUI
--- vim.cmd.colorscheme("base16-default-dark")
-vim.cmd.colorscheme("rose-pine")
--- vim.g.nightflyTransparent = true
 vim.opt.background = "dark"
 
 -- setting
@@ -10,14 +7,14 @@ vim.g.mapleader = " "
 
 -- vim.opt.fileencoding = "utf-8" -- File content encoding for the buffer
 -- vim.opt.hid = true
-vim.opt.wrap = false -- Disable wrapping of lines longer than the width of window
+vim.opt.wrap = false          -- Disable wrapping of lines longer than the width of window
 -- vim.opt.conceallevel = 0
-vim.opt.tabstop = 2 -- Number of space in a tab
-vim.opt.shiftwidth = 2 -- Number of space inserted for indentation
+vim.opt.tabstop = 2           -- Number of space in a tab
+vim.opt.shiftwidth = 2        -- Number of space inserted for indentation
 vim.opt.relativenumber = true -- Show relative numberline
-vim.opt.nu = true -- Show numberline?
+vim.opt.nu = true             -- Show numberline?
 -- vim.opt.smarttab = true
-vim.opt.expandtab = true -- Enable the use of space in tab
+vim.opt.expandtab = true      -- Enable the use of space in tab
 vim.opt.smartindent = true
 -- vim.opt.autoindent = true
 vim.opt.clipboard = "unnamedplus"
@@ -36,8 +33,8 @@ vim.opt.incsearch = true
 -- vim.opt.history = 100 -- Number of commands to remember in a history table
 -- vim.opt.mouse = "a" -- Enable mouse support
 vim.opt.signcolumn = "yes" -- Always show the sign column
-vim.opt.swapfile = false -- Disable use of swapfile for the buffer
-vim.opt.undofile = true -- Enable persistent undo
+vim.opt.swapfile = false   -- Disable use of swapfile for the buffer
+vim.opt.undofile = true    -- Enable persistent undo
 -- vim.opt.backspace = vim.opt.backspace + { "nostop" } -- Don't stop backspace at insert
 -- vim.opt.copyindent = true -- Copy the previous indentation on autoindenting
 -- vim.opt.cursorline = true -- Highlight the text line of the cursor
