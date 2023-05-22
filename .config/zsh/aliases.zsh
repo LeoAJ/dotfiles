@@ -37,6 +37,11 @@ alias cg="cargo"
 # node
 alias y="yarn"
 
+# brew
+alias b="brew"
+alias bu="b update && b upgrade"
+alias bd="b doctor"
+
 # others
 alias .="cd .."
 alias f="s -p google"
@@ -47,7 +52,6 @@ alias t="touch"
 alias n="nvim"
 alias l="ls -1A"
 alias ll="ls -lh"
-alias b="brew"
 alias tm="tmux"
 alias e="exit"
 alias np="npm"
