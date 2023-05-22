@@ -1,8 +1,6 @@
 tap "epk/epk"
 tap "homebrew/bundle"
-tap "homebrew/cask"
 tap "homebrew/cask-fonts"
-tap "homebrew/core"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -19,6 +17,8 @@ brew "fzf"
 brew "gh"
 # Syntax-highlighting pager for git and diff output
 brew "git-delta"
+# Open source programming language to build simple/reliable/efficient software
+brew "go"
 # Command-line interface for SQLite
 brew "sqlite"
 # General-purpose data compression with high compression ratio
@@ -77,6 +77,8 @@ brew "zsh-autosuggestions"
 brew "zsh-syntax-highlighting"
 # GPU-accelerated terminal emulator
 cask "alacritty"
+# Application launcher and productivity software
+cask "alfred"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
 # Apple's SF Mono font patched with the Nerd Fonts patcher for Powerline support
