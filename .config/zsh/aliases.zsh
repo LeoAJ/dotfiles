@@ -58,6 +58,7 @@ alias np="npm"
 alias ca="cat"
 alias ba="bat"
 alias sz="source ~/.config/zsh/.zshrc"
+alias p="python3"
 
 # config
 alias nc="nvim ~/.gitconfig"
