@@ -101,7 +101,8 @@ require("lazy").setup({
 
   "max397574/better-escape.nvim",
 
-  "lukas-reineke/indent-blankline.nvim",
+  -- "lukas-reineke/indent-blankline.nvim",
+  { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
   "akinsho/toggleterm.nvim",
 
