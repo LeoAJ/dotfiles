@@ -86,8 +86,6 @@ require("lazy").setup({
 
   { "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 
-  -- "jose-elias-alvarez/null-ls.nvim",
-  -- "jayp0521/mason-null-ls.nvim",
   {
     'akinsho/bufferline.nvim',
     version = "v3.*",
@@ -101,7 +99,6 @@ require("lazy").setup({
 
   "max397574/better-escape.nvim",
 
-  -- "lukas-reineke/indent-blankline.nvim",
   { "lukas-reineke/indent-blankline.nvim", main = "ibl", opts = {} },
 
   "akinsho/toggleterm.nvim",
