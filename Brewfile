@@ -7,6 +7,8 @@ brew "antidote"
 brew "bat"
 # Cross-platform make
 brew "cmake"
+# Good-lookin' diffs with diff-highlight and more
+brew "diff-so-fancy"
 # Simple, fast and user-friendly alternative to find
 brew "fd"
 # Fast and simple Node.js version manager
@@ -15,8 +17,6 @@ brew "fnm"
 brew "fzf"
 # GitHub command-line tool
 brew "gh"
-# Syntax-highlighting pager for git and diff output
-brew "git-delta"
 # Open source programming language to build simple/reliable/efficient software
 brew "go"
 # Command-line interface for SQLite
@@ -43,7 +43,7 @@ brew "tree-sitter"
 brew "neovim"
 # Perl compatible regular expressions library with a new API
 brew "pcre2"
-# 📦🚀 Fast, disk space efficient package manager
+# Fast, disk space efficient package manager
 brew "pnpm"
 # Modern replacement for ps written by Rust
 brew "procs"
@@ -90,3 +90,15 @@ cask "maccy"
 cask "monitorcontrol"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
+vscode "AndrsDC.base16-themes"
+vscode "atomiks.moonlight"
+vscode "Catppuccin.catppuccin-vsc"
+vscode "chiragpat.tomorrow-and-tomorrow-night-operator-mono-theme"
+vscode "cschlosser.doxdocgen"
+vscode "enkia.tokyo-night"
+vscode "jdinhlife.gruvbox"
+vscode "jeff-hykin.better-cpp-syntax"
+vscode "jmreicha.tender"
+vscode "rust-lang.rust-analyzer"
+vscode "sdras.night-owl"
+vscode "vscodevim.vim"
