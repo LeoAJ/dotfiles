@@ -1,12 +1,12 @@
 [interactive]
 	diffFilter = diff-so-fancy --patch
-[delta]
-  features = side-by-side line-numbers decorations
-  whitespace-error-style = 22 reverse
-[delta "decorations"]
-  commit-decoration-style = bold yellow box ul
-  file-style = bold yellow ul
-  file-decoration-style = none
+; [delta]
+;   features = side-by-side line-numbers decorations
+;   whitespace-error-style = 22 reverse
+; [delta "decorations"]
+;   commit-decoration-style = bold yellow box ul
+;   file-style = bold yellow ul
+;   file-decoration-style = none
 [core]
 	editor = vim
 	pager = diff-so-fancy | less --tabs=2 -RFX
