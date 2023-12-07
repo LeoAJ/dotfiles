@@ -3,7 +3,7 @@ return {
 	config = function()
 		require("toggleterm").setup({
 			shell = vim.o.shell,
-			size = 20,
+			size = 10,
 			open_mapping = [[<c-\>]],
 			shading_factor = 2,
 			direction = "horizontal",

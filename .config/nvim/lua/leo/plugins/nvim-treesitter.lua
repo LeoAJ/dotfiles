@@ -8,6 +8,7 @@ return {
 			"windwp/nvim-ts-autotag",
 		},
 		config = function()
+			vim.g.skip_ts_context_commentstring_module = true
 			-- import nvim-treesitter plugin
 			local treesitter = require("nvim-treesitter.configs")
 
@@ -50,11 +51,7 @@ return {
 					-- 	node_decremental = "<bs>",
 					-- },
 				},
-				-- enable nvim-ts-context-commentstring plugin for commenting tsx and jsx
-				context_commentstring = {
-					enable = true,
-					enable_autocmd = false,
-				},
+				enable_autocmd = false,
 			})
 		end,
 	},
