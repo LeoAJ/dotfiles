@@ -27,6 +27,7 @@ return {
 			-- see :help lsp-zero-keybindings
 			-- to learn the available actions
 			lsp_zero.default_keymaps({ buffer = bufnr })
+			vim.keymap.set("n", "gca", "<cmd>:lua vim.lsp.buf.code_action()<cr>", { buffer = bufnr })
 		end)
 
 		require("mason-lspconfig").setup({
@@ -61,7 +62,13 @@ return {
 		rust_tools.setup({
 			server = {
 				on_attach = function()
-					vim.keymap.set("n", "<leader>ca", rust_tools.hover_actions.hover_actions, { buffer = bufnr })
+					-- vim.keymap.set("n", "<leader>cc", rust_tools.hover_actions.hover_actions, { buffer = bufnr })
+					-- vim.keymap.set(
+					-- 	"n",
+					-- 	"<leader>ca",
+					-- 	rust_tools.code_action_group.code_action_group,
+					-- 	{ buffer = bufnr }
+					-- )
 				end,
 			},
 		})
