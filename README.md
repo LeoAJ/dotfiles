@@ -29,7 +29,6 @@ Those tools will be installed by brew
 - [nerd-fonts](https://github.com/ryanoasis/nerd-fonts#option-4-homebrew-fonts)
 - [Rectangle](https://github.com/rxhanson/Rectangle)
 - [bat](https://github.com/sharkdp/bat)
-- [delta](https://github.com/dandavison/delta)
 - [s](https://github.com/zquestz/s)
 - [fd](https://github.com/sharkdp/fd)
 - [ripgrep](https://github.com/BurntSushi/ripgrep)
@@ -37,11 +36,13 @@ Those tools will be installed by brew
 - [Maccy](https://github.com/p0deje/Maccy)
 - [DevToysMac](https://github.com/ObuchiYuki/DevToysMac)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
+- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - yarn
 - tree
 - the_silver_searcher
 - fzf
-- [z (deprecated)](https://github.com/rupa/z)
+- [z (replaced by zoxide)](https://github.com/rupa/z)
+- [delta (replaced by diff-so-fancy)](https://github.com/dandavison/delta)
 
 ## Others
 
