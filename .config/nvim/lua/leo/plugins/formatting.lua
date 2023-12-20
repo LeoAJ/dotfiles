@@ -6,18 +6,18 @@ return {
 		local conform = require("conform")
 		conform.setup({
 			formatters_by_ft = {
-				javascript = { "prettier" },
-				typescript = { "prettier" },
-				javascriptreact = { "prettier" },
-				typescriptreact = { "prettier" },
-				css = { "prettier" },
-				html = { "prettier" },
-				json = { "prettier" },
-				yaml = { "prettier" },
-				markdown = { "prettier" },
-				graphql = { "prettier" },
+				javascript = { "biome" },
+				typescript = { "biome" },
+				javascriptreact = { "biome" },
+				typescriptreact = { "biome" },
+				css = { "biome" },
+				html = { "biome" },
+				json = { "biome" },
+				yaml = { "biome" },
+				markdown = { "biome" },
+				graphql = { "biome" },
 				lua = { "stylua" },
-				python = { "isort", "black" },
+				python = { "ruff_format" },
 				rust = { "rustfmt" },
 			},
 			format_on_save = {
@@ -26,5 +26,12 @@ return {
 				timeout_ms = 1000,
 			},
 		})
+		vim.keymap.set({ "n", "v" }, "<leader>m", function()
+			conform.format({
+				lsp_fallback = true,
+				async = false,
+				timeout_ms = 1000,
+			})
+		end, { desc = "Format file or range (in visual mode)" })
 	end,
 }

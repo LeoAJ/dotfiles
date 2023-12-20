@@ -32,6 +32,7 @@ return {
 
 		require("mason-lspconfig").setup({
 			ensure_installed = {
+				"rust_analyzer",
 				"tsserver",
 				"lua_ls",
 				"graphql",
@@ -50,6 +51,7 @@ return {
 		})
 
 		local lsp = require("lsp-zero").preset({})
+
 		lsp.configure("tsserver", {
 			settings = {
 				filetypes = { "typescript", "typescriptreact", "typescript.tsx", "javascript" },
