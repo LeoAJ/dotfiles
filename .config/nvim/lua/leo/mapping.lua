@@ -33,6 +33,10 @@ vim.keymap.set("n", "<C-u>", "<C-u>zz")
 vim.keymap.set("n", "n", "nzzzv")
 vim.keymap.set("n", "N", "Nzzzv")
 
+-- switch between buffers
+vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>")
+vim.keymap.set("n", "<S-Tab>", "<cmd>bprev<cr>")
+
 -- format
 -- vim.keymap.set("n", "<leader>g", function()
 -- 	vim.lsp.buf.format()
