@@ -62,7 +62,7 @@ alias p="python3"
 
 # config
 alias nc="nvim ~/.gitconfig"
-alias na="nvim ~/.config/alacritty/alacritty.yml"
+alias na="nvim ~/.config/alacritty/alacritty.toml"
 alias ni="nvim ~/.config/nvim/lua/leo/init.lua"
 alias nt="nvim ~/.tmux.conf"
 alias nz="nvim ~/.config/zsh/.zshrc"
