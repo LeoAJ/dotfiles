@@ -1,14 +1,12 @@
-# git
-alias g="git"
-
 # git alias
+alias g="git"
 alias gc="g clone --recursive"
 alias gl="g log --pretty=oneline -n 20 --graph --abbrev-commit"
 alias gst="g status -s"
 alias gca="g add -A && git commit -av"
 alias gpl="g pull --recurse-submodules"
-
-# git shortcut
+alias gfm="gco -f master"
+alias gmm="gm master"
 alias gf="g fetch"
 alias gaa="g add ."
 alias gp="g push"
@@ -34,41 +32,44 @@ alias k="kubectl"
 # rust
 alias cg="cargo"
 
+# python
+alias p="python3"
+
 # node
 alias y="yarn"
+alias np="npm"
 
 # brew
 alias b="brew"
 alias bu="b update && b upgrade"
 alias bd="b doctor"
 
+# editor
+alias n="nvim"
+alias tm="tmux"
+
 # others
 alias .="cd .."
-alias f="s -p google"
+alias	cp="cp -iv" 
+alias	mv="mv -iv"
+alias	mkd="mkdir -pv"
 alias c="clear"
 alias h="history"
-alias tr="tree -C"
 alias t="touch"
-alias n="nvim"
 alias l="ls -1A"
 alias ll="ls -lh"
-alias tm="tmux"
 alias e="exit"
-alias np="npm"
 alias ca="cat"
-alias ba="bat"
 alias sz="source ~/.config/zsh/.zshrc"
-alias p="python3"
 
 # config
 alias nc="nvim ~/.gitconfig"
 alias na="nvim ~/.config/alacritty/alacritty.toml"
-alias ni="nvim ~/.config/nvim/lua/leo/init.lua"
 alias nt="nvim ~/.tmux.conf"
 alias nz="nvim ~/.config/zsh/.zshrc"
 alias nza="nvim ~/.config/zsh/aliases.zsh"
 
-alias \
-	cp="cp -iv" \
-	mv="mv -iv" \
-	mkd="mkdir -pv"
+# tools
+alias f="s -p google"
+alias tr="tree -C"
+alias ba="bat"
