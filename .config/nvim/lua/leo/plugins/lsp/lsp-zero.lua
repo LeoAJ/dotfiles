@@ -15,6 +15,7 @@ return {
 		{ "L3MON4D3/LuaSnip" }, -- Required
 		{ "hrsh7th/cmp-buffer" }, -- Optional
 		{ "hrsh7th/cmp-path" }, -- Optional
+		{ "hrsh7th/cmp-cmdline" }, -- Optional
 		{ "saadparwaiz1/cmp_luasnip" }, -- Optional
 		{ "hrsh7th/cmp-nvim-lua" }, -- Optional
 
@@ -22,6 +23,30 @@ return {
 	},
 	config = function()
 		local lsp_zero = require("lsp-zero")
+		local cmp = require("cmp")
+
+		-- `/` cmdline setup.
+		cmp.setup.cmdline("/", {
+			mapping = cmp.mapping.preset.cmdline(),
+			sources = {
+				{ name = "buffer" },
+			},
+		})
+
+		-- `:` cmdline setup.
+		cmp.setup.cmdline(":", {
+			mapping = cmp.mapping.preset.cmdline(),
+			sources = cmp.config.sources({
+				{ name = "path" },
+			}, {
+				{
+					name = "cmdline",
+					option = {
+						ignore_cmds = { "Man", "!" },
+					},
+				},
+			}),
+		})
 
 		lsp_zero.on_attach(function(client, bufnr)
 			-- see :help lsp-zero-keybindings
