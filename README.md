@@ -1,6 +1,6 @@
 # Dotfiles
 
-My dotfiles config
+All my dev setup
 
 ## Brew
 
