@@ -3,7 +3,9 @@ return {
 	version = "v3.x",
 	dependencies = {
 		-- LSP Support
-		{ "neovim/nvim-lspconfig" }, -- Required
+		{
+			"neovim/nvim-lspconfig",
+		}, -- Required
 		{
 			-- Optional
 			"williamboman/mason.nvim",
@@ -22,6 +24,7 @@ return {
 		{ "simrat39/rust-tools.nvim" },
 	},
 	config = function()
+		local navic = require("nvim-navic")
 		local lsp_zero = require("lsp-zero")
 		local cmp = require("cmp")
 
@@ -53,6 +56,7 @@ return {
 		lsp_zero.on_attach(function(client, bufnr)
 			-- see :help lsp-zero-keybindings
 			-- to learn the available actions
+			navic.attach(client, bufnr)
 			lsp_zero.default_keymaps({ buffer = bufnr })
 			vim.keymap.set("n", "gca", "<cmd>:lua vim.lsp.buf.code_action()<cr>", { buffer = bufnr })
 		end)
