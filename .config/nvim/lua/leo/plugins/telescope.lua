@@ -5,6 +5,7 @@ return {
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-ui-select.nvim",
+		"camgraff/telescope-tmux.nvim",
 		{ "nvim-telescope/telescope-fzf-native.nvim", build = "make" },
 		"nvim-tree/nvim-web-devicons",
 	},
@@ -43,6 +44,8 @@ return {
 		keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
 		keymap.set("n", "<leader>r", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
 		keymap.set("n", "<leader>b", "<cmd>Telescope buffers<cr>", { desc = "Search buffers" })
-		keymap.set("n", "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "document symbols" })
+		keymap.set("n", "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Document symbols" })
+		keymap.set("n", "<leader>w", "<cmd>Telescope tmux sessions<cr>", { desc = "Search tmux sessions" })
+		keymap.set("n", "<leader>q", "<cmd>Telescope tmux windows<cr>", { desc = "Search tmux windows" })
 	end,
 }
