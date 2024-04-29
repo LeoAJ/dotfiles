@@ -10,7 +10,7 @@ return {
 	},
 	config = function()
 		local telescope = require("telescope")
-		-- local builtin = require("telescope.builtin")
+		local builtin = require("telescope.builtin")
 		-- local actions = require("telescope.actions")
 		telescope.setup({
 			defaults = {
@@ -31,8 +31,18 @@ return {
 		-- set keymaps
 		local keymap = vim.keymap -- for conciseness
 
-		keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
-		keymap.set("n", "<leader>r", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+		-- keymap.set("n", "<leader>f", "<cmd>Telescope find_files<cr>", { desc = "Fuzzy find files in cwd" })
+		-- keymap.set("n", "<leader>r", "<cmd>Telescope live_grep<cr>", { desc = "Find string in cwd" })
+		keymap.set("n", "<leader>f", function()
+			builtin.find_files({ hidden = true })
+		end, { desc = "Fuzzy find files in cwd" })
+
+		keymap.set("n", "<leader>r", function()
+			builtin.live_grep({ additional_args = {
+				"--hidden",
+			} })
+		end, { desc = "Find string in cwd" })
+
 		keymap.set("n", "<leader>b", "<cmd>Telescope buffers<cr>", { desc = "Search buffers" })
 		keymap.set("n", "<leader>k", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Document symbols" })
 		keymap.set("n", "<leader>w", "<cmd>Telescope tmux sessions<cr>", { desc = "Search tmux sessions" })
