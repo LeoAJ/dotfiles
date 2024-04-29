@@ -12,7 +12,7 @@ vim.keymap.set("n", "<leader>d", "<cmd>bdelete<cr>")
 -- vim.keymap.set("n", "<leader>t", "<cmd>bdelete<cr>")
 
 -- netrw
-vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+-- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
 
 -- stay in indent mode
 vim.keymap.set("v", "<", "<gv")
