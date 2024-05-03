@@ -80,3 +80,6 @@ alias nza="nvim ~/.config/zsh/aliases.zsh"
 alias f="s -p google"
 alias tr="tree -C"
 alias ba="bat"
+
+# script
+alias fsb="~/fsb.sh"
