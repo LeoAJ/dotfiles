@@ -2,6 +2,7 @@
 .gitconfig
 .gitignore
 .zsh_plugins.txt
+.DS_store
 install.sh
 Brewfile
 Brewfile.lock.json
