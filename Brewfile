@@ -1,6 +1,7 @@
 tap "epk/epk"
 tap "homebrew/bundle"
 tap "homebrew/cask-fonts"
+tap "homebrew/cask-versions"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
 # Clone of cat(1) with syntax highlighting and Git integration
@@ -23,8 +24,6 @@ brew "go"
 brew "sqlite"
 # General-purpose data compression with high compression ratio
 brew "xz"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # High-performance theorem prover
 brew "z3"
 # Zstandard is a real-time compression algorithm
@@ -37,6 +36,8 @@ brew "lua-language-server"
 brew "luajit"
 # OpenResty's Branch of LuaJIT 2
 brew "luajit-openresty"
+# Polyglot runtime manager (asdf rust clone)
+brew "mise"
 # Parser generator tool and incremental parsing library
 brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
@@ -47,10 +48,18 @@ brew "pcre2"
 brew "pnpm"
 # Modern replacement for ps written by Rust
 brew "procs"
+# Python version management
+brew "pyenv"
+# Interpreted, interactive, object-oriented programming language
+brew "python@3.11"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
+# Extremely fast Python linter, written in Rust
+brew "ruff"
+# Experimental Rust compiler front-end for IDEs
+brew "rust-analyzer"
 # Web search from the terminal
 brew "s-search"
 # Cross-shell prompt for astronauts
@@ -81,24 +90,38 @@ cask "alacritty"
 cask "alfred"
 # Utilities designed to make common development tasks easier
 cask "devtoys"
+# Developer targeted fonts with a high number of glyphs
+cask "font-iosevka-nerd-font"
 # Apple's SF Mono font patched with the Nerd Fonts patcher for Powerline support
 cask "font-sf-mono-for-powerline"
 cask "font-sf-mono-nerd-font"
+# Desktop automation application
+cask "hammerspoon"
 # Clipboard manager
 cask "maccy"
 # Tool to control external monitor brightness & volume
 cask "monitorcontrol"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-vscode "AndrsDC.base16-themes"
+vscode "andrsdc.base16-themes"
 vscode "atomiks.moonlight"
-vscode "Catppuccin.catppuccin-vsc"
+vscode "catppuccin.catppuccin-vsc"
 vscode "chiragpat.tomorrow-and-tomorrow-night-operator-mono-theme"
 vscode "cschlosser.doxdocgen"
 vscode "enkia.tokyo-night"
+vscode "fmailscammer.gruber-almost"
+vscode "franciscosilva.gruber-darker"
+vscode "gruntfuggly.todo-tree"
 vscode "jdinhlife.gruvbox"
 vscode "jeff-hykin.better-cpp-syntax"
 vscode "jmreicha.tender"
+vscode "ms-python.debugpy"
+vscode "ms-python.python"
+vscode "ms-python.vscode-pylance"
+vscode "panicbit.cargo"
 vscode "rust-lang.rust-analyzer"
 vscode "sdras.night-owl"
+vscode "serayuzgur.crates"
+vscode "tamasfe.even-better-toml"
+vscode "usernamehw.errorlens"
 vscode "vscodevim.vim"
