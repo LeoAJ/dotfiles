@@ -19,6 +19,7 @@ alias glp="gl --pretty=format:'%Cred%h%Creset -%C(yellow)%d%Creset %s %Cgreen(%c
 alias gb="g branch"
 alias gm="g merge"
 alias gv="gh repo view --web"
+alias gs="g stash"
 
 # docker
 alias dk="docker"
