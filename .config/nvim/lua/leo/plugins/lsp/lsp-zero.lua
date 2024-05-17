@@ -56,7 +56,10 @@ return {
 		lsp_zero.on_attach(function(client, bufnr)
 			-- see :help lsp-zero-keybindings
 			-- to learn the available actions
-			navic.attach(client, bufnr)
+			-- navic.attach(client, bufnr)
+			if client.name ~= "ruff" then
+				navic.attach(client, bufnr)
+			end
 			lsp_zero.default_keymaps({ buffer = bufnr })
 			vim.keymap.set("n", "gca", "<cmd>:lua vim.lsp.buf.code_action()<cr>", { buffer = bufnr })
 		end)
@@ -96,6 +99,7 @@ return {
 		-- }, { force_setup = true })
 
 		require("lspconfig").lua_ls.setup(lsp.nvim_lua_ls())
+		require("lspconfig").gleam.setup({})
 		--
 		rust_tools.setup({})
 	end,
