@@ -15,6 +15,7 @@ return {
 		telescope.setup({
 			defaults = {
 				-- path_display = { truncate = 2 },
+				file_ignore_patterns = { "node_modules", ".git" },
 			},
 			extension = {
 				["ui-select"] = {
