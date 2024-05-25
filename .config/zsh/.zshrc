@@ -18,6 +18,9 @@ autoload -U promptinit && promptinit
 autoload -U colors && colors
 autoload -Uz compinit && compinit
 
+# share cmd history across sessions
+setopt share_history
+
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
