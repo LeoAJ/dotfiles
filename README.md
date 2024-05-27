@@ -38,12 +38,9 @@ Those tools will be installed by brew
 - [DevToysMac](https://github.com/ObuchiYuki/DevToysMac)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
 - [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
-- yarn
-- tree
-- the_silver_searcher
-- fzf
-- [z (replaced by zoxide)](https://github.com/rupa/z)
-- [delta (replaced by diff-so-fancy)](https://github.com/dandavison/delta)
+- [tree](https://formulae.brew.sh/formula/tree)
+- [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
+- [fzf](https://github.com/junegunn/fzf)
 
 ## Others
 
@@ -63,6 +60,11 @@ generate `bat` config file
 ```
 bat --generate-config-file
 ```
+
+## Deprecate
+
+- [z (replaced by zoxide)](https://github.com/rupa/z)
+- [delta (replaced by diff-so-fancy)](https://github.com/dandavison/delta)
 
 ## Reference
 
