@@ -83,4 +83,3 @@ alias tr="tree -C"
 alias ba="bat"
 
 # script
-alias fsb="~/fsb.sh"
