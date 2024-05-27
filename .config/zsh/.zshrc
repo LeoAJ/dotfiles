@@ -12,6 +12,7 @@ source_if_exists $HOME/.config/zsh/aliases.zsh
 source_if_exists $HOME/.config/zsh/exports.zsh
 source_if_exists $HOME/.config/zsh/zim.zsh
 source_if_exists $HOME/.config/zsh/work.zsh
+source_if_exists $HOME/.config/zsh/theme.zsh
 # source_if_exists $HOME/.zsh_plugins.zsh
 
 # autoload -U zmv
