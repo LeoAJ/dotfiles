@@ -62,8 +62,6 @@ brew "ruff"
 brew "rust-analyzer"
 # Web search from the terminal
 brew "s-search"
-# Cross-shell prompt for astronauts
-brew "starship"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
 brew "stow"
 # Code-search similar to ack

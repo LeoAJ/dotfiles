@@ -5,5 +5,6 @@ lazy-lock.json
 zsh/work.zsh
 .zsh_plugins.zsh
 .zcompdump
+.zcompdump.*
 .zsh_history
 .DS_Store
