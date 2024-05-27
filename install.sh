@@ -10,4 +10,4 @@ brew bundle install
 stow .
 
 # create zsh plugins
-antidote bundle < .zsh_plugins.txt > ~/.zsh_plugins.zsh
+# antidote bundle < .zsh_plugins.txt > ~/.zsh_plugins.zsh

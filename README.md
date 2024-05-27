@@ -22,6 +22,7 @@ brew bundle dump --describe
 
 Those tools will be installed by brew
 
+- [zim](https://zimfw.sh/)
 - [fnm](https://github.com/Schniz/fnm)
 - [zsh-autopair](https://github.com/hlissner/zsh-autopair)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)

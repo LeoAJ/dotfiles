@@ -1,5 +1,4 @@
 eval "$(fnm env)"
-eval "$(starship init zsh)"
 eval "$(zoxide init zsh)"
 
 export PATH="$HOME/.cargo/bin:$PATH"
@@ -46,10 +45,3 @@ _fzf_compgen_path() {
 _fzf_compgen_dir() {
   fd --type=d --hidden --exclude .git . "$1"
 }
-
-# This is for `z` command
-# Move next only if `homebrew` is installed
-# if command -v brew >/dev/null 2>&1; then
-# 	# Load rupa's z if installed
-# 	[ -f $(brew --prefix)/etc/profile.d/z.sh ] && source $(brew --prefix)/etc/profile.d/z.sh
-# fi
