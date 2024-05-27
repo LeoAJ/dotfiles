@@ -20,7 +20,14 @@ source_if_exists $HOME/.config/zsh/theme.zsh
 # autoload -U colors && colors
 # autoload -Uz compinit && compinit
 
+# vim
 bindkey -v
+
+# zsh-users/zsh-history-substring-search
+bindkey '^[[A' history-substring-search-up
+bindkey '^[[B' history-substring-search-down
+bindkey -M vicmd 'k' history-substring-search-up
+bindkey -M vicmd 'j' history-substring-search-down
 
 # share cmd history across sessions
 setopt share_history
