@@ -62,6 +62,7 @@ return {
 			end
 			lsp_zero.default_keymaps({ buffer = bufnr })
 			vim.keymap.set("n", "gca", "<cmd>:lua vim.lsp.buf.code_action()<cr>", { buffer = bufnr })
+			vim.keymap.set("n", "grn", "<cmd>:lua vim.lsp.buf.rename()<cr>", { buffer = bufnr })
 		end)
 
 		require("mason").setup({})
