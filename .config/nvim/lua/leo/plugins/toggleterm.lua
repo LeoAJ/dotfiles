@@ -3,10 +3,10 @@ return {
 	config = function()
 		require("toggleterm").setup({
 			shell = vim.o.shell,
-			size = 10,
+			size = 50,
 			open_mapping = [[<c-\>]],
 			shading_factor = 2,
-			direction = "horizontal",
+			direction = "vertical",
 			-- float_opts = {
 			-- 	border = "curved",
 			-- 	highlights = {
