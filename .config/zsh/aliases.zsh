@@ -35,13 +35,14 @@ alias cg="cargo"
 
 # python
 alias p="python3"
+alias pi="pip3"
 alias penv="p -m venv .venv"
 alias pa="source .venv/bin/activate"
 alias pd="deactivate"
 
 # pip
-alias ppr="pip freeze > requirements.txt"
-alias ppi="pip install -r requirements.txt"
+alias ppr="pip3 freeze > requirements.txt"
+alias ppi="pip3 install -r requirements.txt"
 
 # node
 alias y="yarn"
