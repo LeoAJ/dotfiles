@@ -84,3 +84,4 @@ alias tr="tree -C"
 alias ba="bat"
 
 # script
+alias sp="sh ~/.config/create_venv.sh"
