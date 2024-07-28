@@ -59,9 +59,9 @@ alias tm="tmux"
 
 # others
 alias .="cd .."
-alias	cp="cp -iv" 
-alias	mv="mv -iv"
-alias	mkd="mkdir -pv"
+alias cp="cp -iv" 
+alias mv="mv -iv"
+alias mkd="mkdir -pv"
 alias c="clear"
 alias h="history"
 alias t="touch"
