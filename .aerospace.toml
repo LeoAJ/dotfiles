@@ -110,37 +110,37 @@ alt-shift-minus = 'resize smart -50'
 alt-shift-equal = 'resize smart +50'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#workspace
-# alt-1 = 'workspace 1'
-# alt-2 = 'workspace 2'
-# alt-3 = 'workspace 3'
-# alt-4 = 'workspace 4'
-# alt-5 = 'workspace 5'
-# alt-6 = 'workspace 6'
-# alt-7 = 'workspace 7'
-# alt-8 = 'workspace 8'
-# alt-9 = 'workspace 9'
-alt-a = 'workspace A' # alacritty
-alt-b = 'workspace B' # browser
-alt-c = 'workspace C' # calendar
-alt-d = 'workspace D' # discord
-# alt-e = 'workspace E'
-alt-f = 'workspace F' # finder
-# alt-g = 'workspace G'
-# alt-i = 'workspace I'
-# alt-m = 'workspace M'
-# alt-n = 'workspace N'
-# alt-o = 'workspace O'
-# alt-p = 'workspace P'
-# alt-q = 'workspace Q'
-# alt-r = 'workspace R'
-alt-s = 'workspace S' # slack, telegram
-# alt-t = 'workspace T' # tbd
-# alt-u = 'workspace U'
-alt-v = 'workspace V' # video (YT)
-# alt-w = 'workspace W'
-# alt-x = 'workspace X'
-# alt-y = 'workspace Y'
-# alt-z = 'workspace Z'
+alt-1 = 'workspace 1'
+alt-2 = 'workspace 2'
+alt-3 = 'workspace 3'
+alt-4 = 'workspace 4'
+alt-5 = 'workspace 5'
+alt-6 = 'workspace 6'
+alt-7 = 'workspace 7'
+alt-8 = 'workspace 8'
+alt-9 = 'workspace 9'
+alt-a = 'workspace A'
+alt-b = 'workspace B'
+alt-c = 'workspace C'
+alt-d = 'workspace D'
+alt-e = 'workspace E'
+alt-f = 'workspace F'
+alt-g = 'workspace G'
+alt-i = 'workspace I'
+alt-m = 'workspace M'
+alt-n = 'workspace N'
+alt-o = 'workspace O'
+alt-p = 'workspace P'
+alt-q = 'workspace Q'
+alt-r = 'workspace R'
+alt-s = 'workspace S'
+alt-t = 'workspace T'
+alt-u = 'workspace U'
+alt-v = 'workspace V'
+alt-w = 'workspace W'
+alt-x = 'workspace X'
+alt-y = 'workspace Y'
+alt-z = 'workspace Z'
 
 # See: https://nikitabobko.github.io/AeroSpace/commands#move-node-to-workspace
 alt-shift-1 = 'move-node-to-workspace 1'
@@ -201,28 +201,52 @@ alt-shift-k = ['join-with up', 'mode main']
 alt-shift-l = ['join-with right', 'mode main']
 
 [[on-window-detected]]
-if.app-id = "org.alacritty"
-run = "move-node-to-workspace A"
+if.app-id = "com.brave.Browser"
+run = "move-node-to-workspace 1"
 
 [[on-window-detected]]
-if.app-id = "com.brave.Browser"
-run = "move-node-to-workspace B"
+if.app-id = "com.google.Chrome"
+run = "move-node-to-workspace 1"
+
+[[on-window-detected]]
+if.app-id = "org.alacritty"
+run = "move-node-to-workspace 2"
+
+[[on-window-detected]]
+if.app-id = "ru.keepcoder.Telegram"
+run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
+if.app-id = "com.tinyspeck.slackmacgap"
+run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
+if.app-id = "com.microsoft.VSCode"
+run = "move-node-to-workspace 4"
+
+[[on-window-detected]]
+if.app-id = "com.github.GitHubClient"
+run = "move-node-to-workspace Q"
 
 [[on-window-detected]]
 if.app-id = "com.apple.iCal"
-run = "move-node-to-workspace C"
+run = "move-node-to-workspace W"
+
+[[on-window-detected]]
+if.app-id = "com.apple.finder"
+run = "move-node-to-workspace E"
+
+[[on-window-detected]]
+if.app-id = "com.apple.mail"
+run = "move-node-to-workspace R"
+
+[[on-window-detected]]
+if.app-id = "us.zoom.xos "
+run = "move-node-to-workspace A"
 
 [[on-window-detected]]
 if.app-id = "com.hnc.Discord"
 run = "move-node-to-workspace D"
-
-[[on-window-detected]]
-if.app-id = "com.apple.finder"
-run = "move-node-to-workspace F"
-
-[[on-window-detected]]
-if.app-id = "ru.keepcoder.Telegram"
-run = "move-node-to-workspace S"
 
 [[on-window-detected]]
 if.app-id = "com.apple.Safari"
