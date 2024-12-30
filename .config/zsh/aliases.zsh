@@ -85,3 +85,6 @@ alias ba="bat"
 
 # script
 alias sp="sh ~/.config/create_venv.sh"
+
+# ptt
+alias ptt="ssh bbsu@ptt.cc"

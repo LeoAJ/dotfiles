@@ -217,6 +217,10 @@ if.app-id = "ru.keepcoder.Telegram"
 run = "move-node-to-workspace 3"
 
 [[on-window-detected]]
+if.app-id = "com.hnc.Discord"
+run = "move-node-to-workspace 3"
+
+[[on-window-detected]]
 if.app-id = "com.tinyspeck.slackmacgap"
 run = "move-node-to-workspace 3"
 
@@ -241,13 +245,13 @@ if.app-id = "com.apple.mail"
 run = "move-node-to-workspace R"
 
 [[on-window-detected]]
-if.app-id = "us.zoom.xos "
+if.app-id = "us.zoom.xos"
 run = "move-node-to-workspace A"
 
 [[on-window-detected]]
-if.app-id = "com.hnc.Discord"
+if.app-id = "com.readdle.SparkDesktop.appstore"
 run = "move-node-to-workspace D"
 
 [[on-window-detected]]
 if.app-id = "com.apple.Safari"
-run = "move-node-to-workspace V"
+run = "move-node-to-workspace F"
