@@ -1,4 +1,4 @@
-import = ["/Users/leo/dotfiles/.config/alacritty/tomorrow_night.toml"]
+general.import = ["/Users/leo/dotfiles/.config/alacritty/tomorrow_night.toml"]
 
 [colors]
 draw_bold_text_with_bright_colors = true
