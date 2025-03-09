@@ -41,7 +41,7 @@ vim.opt.undofile = true -- Enable persistent undo
 -- vim.opt.copyindent = true -- Copy the previous indentation on autoindenting
 -- vim.opt.cursorline = true -- Highlight the text line of the cursor
 -- vim.opt.fillchars = { eob = " " } -- Disable `~` on nonexistent lines
--- vim.opt.laststatus = 3 -- globalstatus
+vim.opt.laststatus = 3 -- globalstatus
 -- vim.opt.lazyredraw = true -- lazily redraw screen
 -- vim.opt.preserveindent = true -- Preserve indent structure as much as possible
 vim.opt.pumheight = 11 -- Height of the pop up menu

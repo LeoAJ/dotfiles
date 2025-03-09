@@ -69,7 +69,7 @@ return {
 		require("mason-lspconfig").setup({
 			ensure_installed = {
 				"rust_analyzer",
-				"tsserver",
+				-- "tsserver",
 				"lua_ls",
 				"graphql",
 				"emmet_ls",
