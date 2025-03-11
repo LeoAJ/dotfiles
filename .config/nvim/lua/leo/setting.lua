@@ -49,12 +49,12 @@ vim.opt.pumheight = 11 -- Height of the pop up menu
 -- vim.opt.sidescrolloff = 8 -- Number of columns to keep at the sides of the cursor
 
 -- Highlight when yank
-vim.cmd([[
-  augroup highlight_yank
-    autocmd!
-    au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
-  augroup END
-]])
+-- vim.cmd([[
+--   augroup highlight_yank
+--     autocmd!
+--     au TextYankPost * silent! lua vim.highlight.on_yank{higroup="IncSearch", timeout=200}
+--   augroup END
+-- ]])
 
 -- reset cursor style for terminal after exit nvim
 vim.cmd([[
@@ -63,3 +63,33 @@ vim.cmd([[
     au VimLeave,VimSuspend * set guicursor=a:ver10
   augroup END
 ]])
+
+vim.api.nvim_create_autocmd("TextYankPost", {
+	desc = "Highlight when yanking (copying) text",
+	group = vim.api.nvim_create_augroup("kickstart-highlight-yank", { clear = true }),
+	callback = function()
+		vim.highlight.on_yank()
+	end,
+})
+
+vim.api.nvim_create_autocmd("TermOpen", {
+	group = vim.api.nvim_create_augroup("custom-term-open", { clear = true }),
+	callback = function()
+		vim.opt.number = false
+		vim.opt.relativenumber = false
+	end,
+})
+
+vim.keymap.set("n", "<space>tr", function()
+	vim.cmd.vnew()
+	vim.cmd.term()
+	vim.cmd.wincmd("L")
+	vim.api.nvim_win_set_width(0, 40)
+end)
+
+vim.keymap.set("n", "<space>tb", function()
+	vim.cmd.vnew()
+	vim.cmd.term()
+	vim.cmd.wincmd("J")
+	vim.api.nvim_win_set_height(0, 5)
+end)
