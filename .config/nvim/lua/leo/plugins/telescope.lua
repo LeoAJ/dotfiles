@@ -43,7 +43,8 @@ return {
 			} })
 		end, { desc = "Find string in cwd" })
 
-		keymap.set("n", "<leader>b", "<cmd>Telescope buffers<cr>", { desc = "Search buffers" })
+		-- keymap.set("n", "<leader>b", "<cmd>Telescope buffers<cr>", { desc = "Search buffers" })
+		keymap.set("n", "<leader>b", "<cmd>Telescope frecency<cr>", { desc = "frecency" })
 		keymap.set("n", "<leader>s", "<cmd>Telescope lsp_document_symbols<cr>", { desc = "Document symbols" })
 		keymap.set("n", "<leader>w", "<cmd>Telescope tmux sessions<cr>", { desc = "Search tmux sessions" })
 		keymap.set("n", "<leader>q", "<cmd>Telescope tmux windows<cr>", { desc = "Search tmux windows" })
