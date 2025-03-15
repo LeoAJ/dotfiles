@@ -79,17 +79,3 @@ vim.api.nvim_create_autocmd("TermOpen", {
 		vim.opt.relativenumber = false
 	end,
 })
-
-vim.keymap.set("n", "<space>tr", function()
-	vim.cmd.vnew()
-	vim.cmd.term()
-	vim.cmd.wincmd("L")
-	vim.api.nvim_win_set_width(0, 40)
-end)
-
-vim.keymap.set("n", "<space>tb", function()
-	vim.cmd.vnew()
-	vim.cmd.term()
-	vim.cmd.wincmd("J")
-	vim.api.nvim_win_set_height(0, 5)
-end)
