@@ -37,13 +37,32 @@ vim.keymap.set("n", "N", "Nzzzv")
 vim.keymap.set("n", "<Tab>", "<cmd>bnext<cr>")
 vim.keymap.set("n", "<S-Tab>", "<cmd>bprev<cr>")
 
+-- set Esc to switch back to normal mode in terminal
+vim.keymap.set("t", "<Esc>", "<C-\\><C-n>", { noremap = true })
+
+vim.keymap.set("n", "<space>tr", function()
+	vim.cmd.vnew()
+	vim.cmd.term()
+	vim.cmd.wincmd("L")
+	vim.api.nvim_win_set_width(0, 50)
+	vim.cmd.startinsert()
+end)
+
+vim.keymap.set("n", "<space>tb", function()
+	vim.cmd.vnew()
+	vim.cmd.term()
+	vim.cmd.wincmd("J")
+	vim.api.nvim_win_set_height(0, 5)
+	vim.cmd.startinsert()
+end)
+
 -- format
 -- vim.keymap.set("n", "<leader>g", function()
 -- 	vim.lsp.buf.format()
 -- end)
 vim.keymap.set("n", "gl", "<cmd>lua vim.diagnostic.open_float()<cr>")
 vim.keymap.set("n", "gca", "<cmd>lua vim.lsp.buf.code_action()<cr>")
-vim.keymap.set("n", "gnr", "<cmd>lua vim.lsp.buf.rename()<cr>")
+vim.keymap.set("n", "grn", "<cmd>lua vim.lsp.buf.rename()<cr>")
 -- vim.keymap.set("n", "K", "<cmd>lua vim.lsp.buf.hover()<cr>")
 vim.keymap.set("n", "gd", "<cmd>lua vim.lsp.buf.definition()<cr>")
 vim.keymap.set("n", "gD", "<cmd>lua vim.lsp.buf.declaration()<cr>")
