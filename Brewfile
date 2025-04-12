@@ -1,7 +1,7 @@
 tap "epk/epk"
-tap "homebrew/bundle"
-tap "homebrew/cask-fonts"
-tap "homebrew/cask-versions"
+# tap "homebrew/bundle"
+# tap "homebrew/cask-fonts"
+# tap "homebrew/cask-versions"
 # Plugin manager for zsh, inspired by antigen and antibody
 brew "antidote"
 # Clone of cat(1) with syntax highlighting and Git integration
