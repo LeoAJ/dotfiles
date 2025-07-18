@@ -1,3 +1,11 @@
+ppx() {
+  open "https://www.perplexity.ai/search/?copilot=false&q=$*"
+}
+
+gpt() {
+  open "https://chatgpt.com/?hints=search&q=$*"
+}
+
 # git alias
 alias g="git"
 alias gc="g clone --recursive"

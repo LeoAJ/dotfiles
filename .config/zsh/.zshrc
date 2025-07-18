@@ -41,3 +41,11 @@ if [ "$TMUX" = "" ]; then tmux; fi
 
 # bun completions
 [ -s "/Users/leo/.bun/_bun" ] && source "/Users/leo/.bun/_bun"
+
+# pnpm
+export PNPM_HOME="/Users/leo/Library/pnpm"
+case ":$PATH:" in
+  *":$PNPM_HOME:"*) ;;
+  *) export PATH="$PNPM_HOME:$PATH" ;;
+esac
+# pnpm end
