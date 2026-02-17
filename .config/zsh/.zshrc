@@ -9,7 +9,7 @@ source_if_exists () {
 }
 
 source_if_exists $HOME/.config/zsh/aliases.zsh
-source_if_exists $HOME/.config/zsh/exports.zsh
+source_if_exists $HOME/.config/zsh/exports_v2.zsh
 source_if_exists $HOME/.config/zsh/zim.zsh
 source_if_exists $HOME/.config/zsh/work.zsh
 source_if_exists $HOME/.config/zsh/theme.zsh
@@ -49,3 +49,5 @@ case ":$PATH:" in
   *) export PATH="$PNPM_HOME:$PATH" ;;
 esac
 # pnpm end
+
+. "$HOME/.local/bin/env"
