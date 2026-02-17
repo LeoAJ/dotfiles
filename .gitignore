@@ -8,3 +8,4 @@ zsh/work.zsh
 .zcompdump.*
 .zsh_history
 .DS_Store
+uv/
