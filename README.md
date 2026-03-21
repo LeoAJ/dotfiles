@@ -64,7 +64,6 @@ bat --generate-config-file
 ## Deprecate
 
 - [z (replaced by zoxide)](https://github.com/rupa/z)
-- [delta (replaced by diff-so-fancy)](https://github.com/dandavison/delta)
 
 ## Reference
 
