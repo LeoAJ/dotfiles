@@ -9,7 +9,7 @@ install [brew](https://brew.sh) first
 to update `Brewfile`
 
 ```
-brew bundle dump --describe
+brew bundle dump --describe --no-vscode
 ```
 
 ## Install
@@ -37,7 +37,7 @@ Those tools will be installed by brew
 - [Maccy](https://github.com/p0deje/Maccy)
 - [DevToysMac](https://github.com/ObuchiYuki/DevToysMac)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
+- [difftastic](https://github.com/Wilfred/difftastic)
 - [tree](https://formulae.brew.sh/formula/tree)
 - [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 - [fzf](https://github.com/junegunn/fzf)
