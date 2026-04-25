@@ -39,7 +39,7 @@ alias dc="docker-compose"
 alias k="kubectl"
 
 # rust
-alias cg="cargo"
+# alias cg="cargo"
 
 # python
 alias p="python3"

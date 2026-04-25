@@ -5,8 +5,6 @@ brew "antidote"
 brew "bat"
 # Cross-platform make
 brew "cmake"
-# Good-lookin' diffs with diff-highlight and more
-brew "diff-so-fancy"
 # Diff that understands syntax
 brew "difftastic"
 # Simple, fast and user-friendly alternative to find
@@ -21,8 +19,6 @@ brew "fzf"
 brew "gh"
 # Quickly rewrite git repository history
 brew "git-filter-repo"
-# Open source programming language to build simple/reliable/efficient software
-brew "go"
 # General-purpose data compression with high compression ratio
 brew "xz"
 # Zstandard is a real-time compression algorithm
@@ -39,6 +35,8 @@ brew "luajit"
 brew "luajit-openresty"
 # Polyglot runtime manager (asdf rust clone)
 brew "mise"
+# Incremental parsing library
+brew "tree-sitter"
 # Ambitious Vim-fork focused on extensibility and agility
 brew "neovim"
 # Perl compatible regular expressions library with a new API
@@ -47,18 +45,12 @@ brew "pcre2"
 brew "pnpm"
 # Modern replacement for ps written in Rust
 brew "procs"
-# Python version management
-brew "pyenv"
-# Interpreted, interactive, object-oriented programming language
-brew "python@3.11"
 # Reattach process (e.g., tmux) to background
 brew "reattach-to-user-namespace"
 # Search tool like grep and The Silver Searcher
 brew "ripgrep"
 # Extremely fast Python linter, written in Rust
 brew "ruff"
-# Experimental Rust compiler front-end for IDEs
-brew "rust-analyzer"
 # Web search from the terminal
 brew "s-search"
 # Organize software neatly under a single directory tree (e.g. /usr/local)
@@ -71,12 +63,8 @@ brew "tmux"
 brew "tokei"
 # Display directories as trees (with optional color/HTML output)
 brew "tree"
-# Incremental parsing library
-brew "tree-sitter"
 # Extremely fast Python package installer and resolver, written in Rust
 brew "uv"
-# JavaScript package manager
-brew "yarn"
 # Shell extension to navigate your filesystem faster
 brew "zoxide"
 # UNIX shell (command interpreter)
@@ -102,5 +90,3 @@ cask "monitorcontrol"
 cask "orbstack"
 # Move and resize windows using keyboard shortcuts or snap areas
 cask "rectangle"
-# Open-source code editor
-cask "visual-studio-code"
