@@ -1,6 +1,7 @@
 return {
 	"nvim-telescope/telescope.nvim",
-	tag = "0.1.6",
+	version = "*",
+	-- tag = "0.1.6",
 	dependencies = {
 		"nvim-lua/plenary.nvim",
 		"nvim-telescope/telescope-ui-select.nvim",
@@ -14,6 +15,9 @@ return {
 		-- local actions = require("telescope.actions")
 		telescope.setup({
 			defaults = {
+				-- preview = {
+				-- 	treesitter = false,
+				-- },
 				path_display = { truncate = 2 },
 				file_ignore_patterns = { "node_modules", ".git" },
 			},

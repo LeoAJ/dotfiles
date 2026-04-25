@@ -25,10 +25,10 @@ return {
 				"bash-language-server",
 				"lua-language-server",
 				"pyright",
-				"rust-analyzer",
+				-- "rust-analyzer",
 				"typescript-language-server",
-				"taplo",
-				"biome",
+				-- "taplo",
+				-- "biome",
 				"ruff",
 				"stylua", -- lua formatter
 			},
