@@ -37,10 +37,10 @@ Those tools will be installed by brew
 - [Maccy](https://github.com/p0deje/Maccy)
 - [DevToysMac](https://github.com/ObuchiYuki/DevToysMac)
 - [zoxide](https://github.com/ajeetdsouza/zoxide)
-- [diff-so-fancy](https://github.com/so-fancy/diff-so-fancy)
 - [tree](https://formulae.brew.sh/formula/tree)
 - [the_silver_searcher](https://github.com/ggreer/the_silver_searcher)
 - [fzf](https://github.com/junegunn/fzf)
+- [difftastic](https://github.com/wilfred/difftastic)
 
 ## Others
 
@@ -65,6 +65,7 @@ bat --generate-config-file
 
 - [z (replaced by zoxide)](https://github.com/rupa/z)
 - [delta (replaced by diff-so-fancy)](https://github.com/dandavison/delta)
+- [diff-so-fancy (replaced by difftastic)](https://github.com/so-fancy/diff-so-fancy)
 
 ## Reference
 
