@@ -8,11 +8,8 @@ vim.keymap.set("n", "-", "<C-x>")
 -- close buffer
 vim.keymap.set("n", "<leader>d", "<cmd>bdelete<cr>")
 
--- terminal
--- vim.keymap.set("n", "<leader>t", "<cmd>bdelete<cr>")
-
--- netrw
--- vim.keymap.set("n", "<leader>e", vim.cmd.Ex)
+-- restart
+vim.keymap.set("n", "<leader>j", "<cmd>restart<cr>")
 
 -- stay in indent mode
 vim.keymap.set("v", "<", "<gv")
