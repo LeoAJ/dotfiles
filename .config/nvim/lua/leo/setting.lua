@@ -22,6 +22,8 @@ vim.opt.swapfile = false -- Disable use of swapfile for the buffer
 vim.opt.undofile = true -- Enable persistent undo
 vim.opt.laststatus = 3 -- globalstatus
 vim.opt.pumheight = 11 -- Height of the pop up menu
+vim.opt.cursorline = true
+vim.opt.cursorlineopt = "number"
 
 vim.cmd([[
   augroup shape
@@ -38,13 +40,5 @@ vim.api.nvim_create_autocmd("TextYankPost", {
 			higroup = "IncSearch", -- highlight group (color)
 			timeout = 200, -- duration in ms
 		})
-	end,
-})
-
-vim.api.nvim_create_autocmd("TermOpen", {
-	group = vim.api.nvim_create_augroup("custom-term-open", { clear = true }),
-	callback = function()
-		vim.opt.number = false
-		vim.opt.relativenumber = false
 	end,
 })
