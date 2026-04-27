@@ -8,5 +8,7 @@ zsh/work.zsh
 .zcompdump.*
 .zsh_history
 .DS_Store
+.git/
+.zim/
 uv/
 gh/
