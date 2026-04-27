@@ -18,21 +18,21 @@ return {
         vim.keymap.set("n", "gi", "<cmd>Telescope lsp_implementations<CR>", opts)
 
         opts.desc = "Show LSP type definitions"
-        vim.keymap.set("n", "gt", "<cmd>Telescope lsp_type_definitions<CR>", opts)
+        vim.keymap.set("n", "go", "<cmd>Telescope lsp_type_definitions<CR>", opts)
 
         opts.desc = "See available code actions"
-        vim.keymap.set({ "n", "v" }, "<leader>vca", function()
+        vim.keymap.set({ "n", "v" }, "gca", function()
           vim.lsp.buf.code_action()
         end, opts)
 
         opts.desc = "Smart rename"
-        vim.keymap.set("n", "<leader>l", vim.lsp.buf.rename, opts)
+        vim.keymap.set("n", "grn", vim.lsp.buf.rename, opts)
 
         opts.desc = "Show buffer diagnostics"
         vim.keymap.set("n", "<leader>D", "<cmd>Telescope diagnostics bufnr=0<CR>", opts)
 
         opts.desc = "Show line diagnostics"
-        vim.keymap.set("n", "<leader>b", vim.diagnostic.open_float, opts)
+        vim.keymap.set("n", "gl", vim.diagnostic.open_float, opts)
 
         opts.desc = "Show documentation for what is under cursor"
         vim.keymap.set("n", "K", vim.lsp.buf.hover, opts)
