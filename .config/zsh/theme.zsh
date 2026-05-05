@@ -7,6 +7,14 @@
 
 setopt nopromptbang prompt{cr,percent,sp,subst}
 
+zinit ice as"null" \
+  atload'fpath+=( ${ZINIT[PLUGINS_DIR]}/zimfw---prompt-pwd/functions ); autoload -Uz prompt-pwd'
+zinit light zimfw/prompt-pwd
+
+zinit ice as"null" \
+  atload'fpath+=( ${ZINIT[PLUGINS_DIR]}/zimfw---git-info/functions ); autoload -Uz git-info'
+zinit light zimfw/git-info
+
 zstyle ':zim:prompt-pwd' git-root yes
 
 typeset -gA git_info
