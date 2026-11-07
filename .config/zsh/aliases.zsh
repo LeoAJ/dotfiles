@@ -6,6 +6,10 @@ gpt() {
   open "https://chatgpt.com/?hints=search&q=$*"
 }
 
+alias cx="codex"
+alias cl="claude"
+alias cls="claude --dangerously-skip-permissions"
+
 # git alias
 alias g="git"
 alias gc="g clone --recursive"
