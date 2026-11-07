@@ -13,3 +13,6 @@ zsh/work.zsh
 .codegraph/
 uv/
 gh/
+
+.config/herdr/*
+!.config/herdr/config.tom

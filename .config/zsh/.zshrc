@@ -50,7 +50,7 @@ bindkey -v
 # Uncomment the following line to use case-sensitive completion.
 CASE_SENSITIVE="true"
 
-if [ "$TMUX" = "" ]; then tmux; fi
+# if [ "$TMUX" = "" ]; then tmux; fi
 
 # bun completions
 [ -s "/Users/leo/.bun/_bun" ] && source "/Users/leo/.bun/_bun"
