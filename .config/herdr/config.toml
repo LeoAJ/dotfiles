@@ -1,0 +1,17 @@
+onboarding = false
+[ui]
+agent_panel_sort = "spaces"
+sidebar_collapsed_mode = "hidden"
+
+prompt_new_tab_name = false
+[keys]
+prefix = "ctrl+a"
+last_pane = "prefix+tab"
+cycle_pane_next = ""
+cycle_pane_previous = "prefix+shift+tab"
+navigate_workspace_up = ["up", "k"]
+navigate_workspace_down = ["down", "j"]
+previous_workspace = ["prefix+up", "prefix+ctrl+up"]
+next_workspace = ["prefix+down", "prefix+ctrl+down"]
+toggle_sidebar = "prefix+e"
+edit_scrollback = "prefix+b"

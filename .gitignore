@@ -15,4 +15,4 @@ uv/
 gh/
 
 .config/herdr/*
-!.config/herdr/config.tom
+!.config/herdr/config.toml
