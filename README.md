@@ -22,7 +22,7 @@ brew bundle dump --describe --no-vscode
 
 Those tools will be installed by brew
 
-- [zim](https://zimfw.sh/)
+- [zinit](https://github.com/zdharma-continuum/zinit)
 - [fnm](https://github.com/Schniz/fnm)
 - [zsh-autopair](https://github.com/hlissner/zsh-autopair)
 - [zsh-autosuggestions](https://github.com/zsh-users/zsh-autosuggestions)
@@ -48,6 +48,14 @@ Those tools will be installed by brew
 - [tldr](https://github.com/tldr-pages/tldr)
 - docker
 - k8s
+
+## AI
+
+- [codegraph](https://github.com/colbymchenry/codegraph)
+- [ponytail](https://github.com/DietrichGebert/ponytail)
+- [skills](https://github.com/mattpocock/skills)
+- [agent-skills](https://github.com/addyosmani/agent-skills)
+- [superpowers](https://github.com/obra/superpowers)
 
 ## Node
 
