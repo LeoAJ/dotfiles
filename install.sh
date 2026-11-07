@@ -8,6 +8,3 @@ brew bundle install
 
 # symlink
 stow .
-
-# create zsh plugins
-# antidote bundle < .zsh_plugins.txt > ~/.zsh_plugins.zsh
