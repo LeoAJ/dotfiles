@@ -10,5 +10,6 @@ zsh/work.zsh
 .DS_Store
 .git/
 .zim/
+.codegraph/
 uv/
 gh/
